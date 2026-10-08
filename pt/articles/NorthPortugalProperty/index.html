@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>O Boom Imobiliário no Norte de Portugal (2024-2025) — Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../../../pt/">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../pt/" id="nav-home">
+<span data-i18n="nav_home">Início</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../pt/services/" id="nav-services">
+<span data-i18n="nav_services">Serviços</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../../../pt/articles/" id="nav-articles">
+<span data-i18n="nav_articles">Artigos</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../pt/contact/" id="nav-contact">
+<span data-i18n="nav_contact">Contactos</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../ru/articles/NorthPortugalProperty/" id="lang-ru">RU</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../en/articles/NorthPortugalProperty/" id="lang-en">EN</a>
+<a class="px-2.5 py-1 rounded-full transition-colors active-lang bg-gold text-white font-semibold" href="../../../pt/articles/NorthPortugalProperty/" id="lang-pt">PT</a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../pt/">
+<span data-i18n="nav_home">Início</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../pt/services/">
+<span data-i18n="nav_services">Serviços</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../pt/articles/">
+<span data-i18n="nav_articles">Artigos</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../../../pt/contact/">
+<span data-i18n="nav_contact">Contactos</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
+<!-- ================= PAGE 1: HOME / ABOUT ================= -->
+
+<!-- ================= PAGE 2: SERVICES ================= -->
+
+<!-- ================= PAGE 3: ARTICLES ================= -->
+
+<!-- ================= PAGE 4: CONTACT ================= -->
+
+<section class="page-section active" id="article-detail"><article class="bg-cream rounded-3xl w-full p-6 sm:p-10 border border-gold/30 relative space-y-6 shadow-lg"><span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">Análise de Mercado</span><h1 class="font-serif text-2xl sm:text-3xl text-charcoal">O Boom Imobiliário no Norte de Portugal (2024-2025)</h1><div class="w-16 h-0.5 bg-gold"></div><div class="text-charcoal-light text-base leading-relaxed space-y-4 font-light break-words">
+<p>A região Norte de Portugal, com destaque para o Grande Porto, Vila Nova de Gaia e Matosinhos, continua a registar uma procura sustentada por parte de compradores e investidores internacionais.</p>
+<p><strong>Fatores Determinantes:</strong></p>
+<ul class="list-disc pl-5 space-y-1">
+<li>Elevada qualidade de vida e infraestruturas modernas.</li>
+<li>Valores por metro quadrado mais atrativos em comparação com o centro de Lisboa.</li>
+<li>Crescimento de polos tecnológicos e universidades.</li>
+</ul>
+<p>A aquisição de património imobiliário no Norte afirma-se como uma escolha segura com excelente potencial de rentabilidade.</p>
+</div><div class="pt-6 border-t border-gold/15 flex justify-end"><a class="gold-outline-btn px-6 py-2.5 rounded-xl text-xs uppercase tracking-wider" href="../">Todos os artigos</a></div></article></section></main>
+
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Consultoria Imobiliária em Portugal</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../../../pt/">Início</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../../../pt/services/">Serviços</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../../../pt/articles/">Artigos</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../../../pt/contact/">Contactos</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">Todos os direitos reservados.</span>
+</div>
+</div>
+</footer>
+
+<script defer="True" src="../../../js/main.js"></script></body>
+</html>

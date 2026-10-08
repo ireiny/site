@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ирина Абашева — Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../ru/">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../ru/" id="nav-home">
+<span data-i18n="nav_home">Главная</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../ru/services/" id="nav-services">
+<span data-i18n="nav_services">Услуги</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../ru/articles/" id="nav-articles">
+<span data-i18n="nav_articles">Статьи</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../ru/contact/" id="nav-contact">
+<span data-i18n="nav_contact">Контакты</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors active-lang bg-gold text-white font-semibold" href="../ru/" id="lang-ru">RU</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../en/" id="lang-en">EN</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../pt/" id="lang-pt">PT</a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../ru/">
+<span data-i18n="nav_home">Главная</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../ru/services/">
+<span data-i18n="nav_services">Услуги</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../ru/articles/">
+<span data-i18n="nav_articles">Статьи</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../ru/contact/">
+<span data-i18n="nav_contact">Контакты</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
+<!-- ================= PAGE 1: HOME / ABOUT ================= -->
+<section class="page-section active space-y-16" id="page-home">
+<!-- Hero Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-block px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold-dark text-xs uppercase tracking-widest font-semibold">
+<span data-i18n="hero_badge">Консультант по недвижимости в Португалии</span>
+</div>
+<h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-charcoal leading-tight">
+<span data-i18n="hero_title_1">Ирина Абашева</span><br/>
+<span class="italic font-light gold-gradient-text" data-i18n="hero_title_2">Ваш персональный гид на рынке недвижимости</span>
+</h1>
+<p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light max-w-2xl" data-i18n="hero_subtitle">Профессиональный подбор, продажа и экспертная поддержка при покупке, аренде и инвестициях в жилую недвижимость Португалии. Прозрачные условия, личный подход и полное юридическое сопровождение.</p>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="gold-btn px-8 py-3.5 rounded-full text-sm font-medium uppercase tracking-wider shadow-md" href="../ru/services/">
+<span data-i18n="btn_explore_services">Посмотреть услуги</span>
+</a>
+<a class="gold-outline-btn px-8 py-3.5 rounded-full text-sm font-medium uppercase tracking-wider" href="../ru/contact/">
+<span data-i18n="btn_get_in_touch">Связаться со мной</span>
+</a>
+</div>
+</div>
+<!-- Profile Card / Visual Accent -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-full max-w-md p-6 bg-cream-card rounded-2xl border border-gold/20 shadow-xl">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-6 bg-gold/5 flex items-center justify-center border border-gold/10"><img alt="Irina Abasheva" class="w-full h-full object-cover object-top" decoding="async" loading="eager" src="../assets/irina-abasheva.jpg"/></div>
+<div class="space-y-3 text-sm text-charcoal-light">
+<div class="flex items-center space-x-3">
+<i class="fa-solid fa-location-dot text-gold w-5 text-center"></i>
+<span data-i18n="stat_location">Португалия (Север, Центр, Лиссабон и побережье)</span>
+</div>
+<div class="flex items-center space-x-3">
+<i class="fa-solid fa-shield-halved text-gold w-5 text-center"></i>
+<span data-i18n="stat_partner">Партнерская сеть ведущих агентств Португалии</span>
+</div>
+<div class="flex items-center space-x-3">
+<i class="fa-solid fa-comments text-gold w-5 text-center"></i>
+<span>RU • EN • PT</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- About Section Details -->
+<div class="bg-cream-card rounded-3xl p-8 sm:p-12 border border-gold/15 space-y-8">
+<div class="max-w-3xl">
+<h2 class="font-serif text-2xl sm:text-3xl text-charcoal mb-4" data-i18n="about_heading">Обо мне и моем подходе</h2>
+<div class="w-16 h-0.5 bg-gold mb-6"></div>
+<p class="text-charcoal-light leading-relaxed text-base sm:text-lg mb-4 font-light" data-i18n="about_p1">Я работаю на рынке недвижимости Португалии, помогая клиентам со всего мира покупать, продавать и арендовать жилье с максимальной безопасностью и комфортом.</p>
+<p class="text-charcoal-light leading-relaxed text-base sm:text-lg font-light" data-i18n="about_p2">Главный приоритет моей работы — защита интересов клиента, трансляция реальной ситуации на рынке и снятие всех стрессовых факторов, связанных с оформлением документов, адаптацией и взаимодействием с местными структурами.</p>
+</div>
+<!-- 3 Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+<div class="p-6 rounded-2xl bg-cream border border-gold/10 hover:border-gold/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4 text-gold">
+<i class="fa-solid fa-chart-line text-xl"></i>
+</div>
+<h3 class="font-serif text-lg font-semibold text-charcoal mb-2" data-i18n="pillar_1_title">Аналитика рынка</h3>
+<p class="text-sm text-charcoal-light font-light" data-i18n="pillar_1_desc">Оценка реальной стоимости объектов, динамики цен по регионам и потенциала капитализации.</p>
+</div>
+<div class="p-6 rounded-2xl bg-cream border border-gold/10 hover:border-gold/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4 text-gold">
+<i class="fa-solid fa-magnifying-glass-location text-xl"></i>
+</div>
+<h3 class="font-serif text-lg font-semibold text-charcoal mb-2" data-i18n="pillar_2_title">Индивидуальный подбор</h3>
+<p class="text-sm text-charcoal-light font-light" data-i18n="pillar_2_desc">Поиск объектов под конкретный жизненный сценарий, образ жизни или инвестиционные задачи.</p>
+</div>
+<div class="p-6 rounded-2xl bg-cream border border-gold/10 hover:border-gold/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4 text-gold">
+<i class="fa-solid fa-file-contract text-xl"></i>
+</div>
+<h3 class="font-serif text-lg font-semibold text-charcoal mb-2" data-i18n="pillar_3_title">Полное сопровождение</h3>
+<p class="text-sm text-charcoal-light font-light" data-i18n="pillar_3_desc">Координация с юристами, нотариусами, налоговыми консультантами и банками до передачи ключей.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= PAGE 2: SERVICES ================= -->
+
+<!-- ================= PAGE 3: ARTICLES ================= -->
+
+<!-- ================= PAGE 4: CONTACT ================= -->
+
+</main>
+
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Недвижимость и консультации в Португалии</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../ru/">Главная</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../ru/services/">Услуги</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../ru/articles/">Статьи</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../ru/contact/">Контакты</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">Все права защищены.</span>
+</div>
+</div>
+</footer>
+
+<script defer="True" src="../js/main.js"></script></body>
+</html>

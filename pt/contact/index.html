@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Como Posso Ajudar? — Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../../pt/">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../pt/" id="nav-home">
+<span data-i18n="nav_home">Início</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../pt/services/" id="nav-services">
+<span data-i18n="nav_services">Serviços</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../pt/articles/" id="nav-articles">
+<span data-i18n="nav_articles">Artigos</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../../pt/contact/" id="nav-contact">
+<span data-i18n="nav_contact">Contactos</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../ru/contact/" id="lang-ru">RU</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../en/contact/" id="lang-en">EN</a>
+<a class="px-2.5 py-1 rounded-full transition-colors active-lang bg-gold text-white font-semibold" href="../../pt/contact/" id="lang-pt">PT</a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../pt/">
+<span data-i18n="nav_home">Início</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../pt/services/">
+<span data-i18n="nav_services">Serviços</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../pt/articles/">
+<span data-i18n="nav_articles">Artigos</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../../pt/contact/">
+<span data-i18n="nav_contact">Contactos</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
+<!-- ================= PAGE 1: HOME / ABOUT ================= -->
+
+<!-- ================= PAGE 2: SERVICES ================= -->
+
+<!-- ================= PAGE 3: ARTICLES ================= -->
+
+<!-- ================= PAGE 4: CONTACT ================= -->
+<section class="page-section space-y-12 active" id="page-contact">
+<div class="text-center max-w-3xl mx-auto space-y-4">
+<span class="text-xs font-semibold uppercase tracking-widest text-gold-dark" data-i18n="contact_subtitle">Entrar em Contacto</span>
+<h2 class="font-serif text-3xl sm:text-4xl text-charcoal" data-i18n="contact_title">Como Posso Ajudar?</h2>
+<p class="text-charcoal-light font-light text-base" data-i18n="contact_intro">Envie uma mensagem ou entre em contacto diretamente através dos canais disponíveis.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Direct Contacts Box -->
+<div class="lg:col-span-5 bg-cream-card rounded-3xl p-8 border border-gold/20 space-y-8">
+<div>
+<h3 class="font-serif text-2xl font-semibold text-charcoal mb-2" data-i18n="direct_contacts_title">Contacto Direto</h3>
+<p class="text-sm text-charcoal-light font-light" data-i18n="direct_contacts_desc">Entre em contacto por WhatsApp ou email.</p>
+</div>
+<div class="space-y-4">
+<!-- WhatsApp Link (Temporary/Customizable) -->
+<a class="flex items-center p-4 rounded-2xl bg-white border border-gold/20 hover:border-gold transition-all group" href="https://wa.me/351911527581" id="whatsapp-link" rel="noopener noreferrer" target="_blank">
+<div class="w-12 h-12 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+<i class="fa-brands fa-whatsapp"></i>
+</div>
+<div>
+<div class="text-xs text-charcoal-light uppercase tracking-wider" data-i18n="label_whatsapp">WhatsApp / Mensagens</div>
+<div class="font-semibold text-charcoal group-hover:text-gold transition-colors">+351 911 527 581</div>
+</div>
+</a>
+<!-- Email Link (Temporary/Customizable) -->
+<a class="flex items-center p-4 rounded-2xl bg-white border border-gold/20 hover:border-gold transition-all group" href="mailto:prohomeportugal@gmail.com" id="email-link">
+<div class="w-12 h-12 rounded-full bg-gold/10 text-gold flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+<i class="fa-regular fa-envelope"></i>
+</div>
+<div>
+<div class="text-xs text-charcoal-light uppercase tracking-wider" data-i18n="label_email">Endereço de E-mail</div>
+<div class="font-semibold text-charcoal group-hover:text-gold transition-colors">prohomeportugal@gmail.com</div>
+</div>
+</a>
+</div>
+<div class="p-4 rounded-2xl bg-cream border border-gold/10 text-xs text-charcoal-light space-y-1">
+<p class="font-semibold text-charcoal" data-i18n="contact_hours_title">Horário de Atendimento:</p>
+<p data-i18n="contact_hours_val">Seg — Sex: 09:00 - 19:00 (WET / Portugal)</p>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-7 bg-cream-card rounded-3xl p-8 border border-gold/20">
+<form class="space-y-6" id="contact-form" onsubmit="return submitContactByEmail(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-charcoal mb-2" data-i18n="form_name">O seu nome</label>
+<input class="w-full px-4 py-3 rounded-xl bg-white border border-gold/20 focus:outline-none focus:border-gold text-sm text-charcoal" id="form-name-input" placeholder="Александр" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-charcoal mb-2" data-i18n="form_phone">Telefone / WhatsApp</label>
+<input class="w-full px-4 py-3 rounded-xl bg-white border border-gold/20 focus:outline-none focus:border-gold text-sm text-charcoal" id="form-phone-input" placeholder="+351 900 000 000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-charcoal mb-2" data-i18n="form_email">E-mail</label>
+<input class="w-full px-4 py-3 rounded-xl bg-white border border-gold/20 focus:outline-none focus:border-gold text-sm text-charcoal" id="form-email-input" placeholder="example@mail.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-charcoal mb-2" data-i18n="form_service">Serviço de interesse</label>
+<select class="w-full px-4 py-3 rounded-xl bg-white border border-gold/20 focus:outline-none focus:border-gold text-sm text-charcoal" id="form-service-select">
+<option data-i18n="opt_consultation" value="Консультация">Consultoria Geral</option>
+<option data-i18n="opt_sales" value="Продажа недвижимости">Venda de Imóvel</option>
+<option data-i18n="opt_buying" value="Подбор под покупку">Pesquisa para Compra</option>
+<option data-i18n="opt_rental" value="Поиск аренды">Pesquisa de Arrendamento</option>
+<option data-i18n="opt_tour" value="Ознакомительный тур">Tour de Orientação</option>
+<option data-i18n="opt_rent_out" value="Сдача объекта">Colocação no Mercado e Serviços</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-charcoal mb-2" data-i18n="form_message">Mensagem</label>
+<textarea class="w-full px-4 py-3 rounded-xl bg-white border border-gold/20 focus:outline-none focus:border-gold text-sm text-charcoal" id="form-message-input" placeholder="Расскажите о ваших пожеланиях..." rows="4"></textarea>
+</div>
+<button class="gold-btn w-full py-4 rounded-xl text-sm font-semibold uppercase tracking-wider shadow-md" type="submit">
+<span data-i18n="btn_send_message">Enviar Mensagem</span>
+</button>
+</form>
+<!-- Success Message Box -->
+
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Consultoria Imobiliária em Portugal</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../../pt/">Início</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../../pt/services/">Serviços</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../../pt/articles/">Artigos</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../../pt/contact/">Contactos</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">Todos os direitos reservados.</span>
+</div>
+</div>
+</footer>
+
+<script defer="True" src="../../js/main.js"></script></body>
+</html>
