@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How to Sell Your Home and Buy Another Without Getting Stuck Between Moves | Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+<meta content="Should you sell first or buy first? Three realistic routes, their trade-offs, and what to plan before listing your property." name="description"/><link href="https://ireiny.github.io/site/en/articles/PortugalMarket2027/" rel="canonical"/><meta content="https://ireiny.github.io/site/assets/articles/PortugalMarket2027/lisbon-cover.webp" property="og:image"/><link href="https://ireiny.github.io/site/ru/articles/SellAndBuyNextHome/" hreflang="ru" rel="alternate"/><link href="https://ireiny.github.io/site/en/articles/SellAndBuyNextHome/" hreflang="en" rel="alternate"/><link href="https://ireiny.github.io/site/pt/articles/SellAndBuyNextHome/" hreflang="pt" rel="alternate"/></head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../../../en/">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../en/" id="nav-home">
+<span data-i18n="nav_home">Home</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../en/services/" id="nav-services">
+<span data-i18n="nav_services">Services</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../../../en/articles/" id="nav-articles">
+<span data-i18n="nav_articles">Articles</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../en/contact/" id="nav-contact">
+<span data-i18n="nav_contact">Contact</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../ru/articles/PortugalMarket2027/" id="lang-ru">RU</a>
+<a class="px-2.5 py-1 rounded-full transition-colors active-lang bg-gold text-white font-semibold" href="../../../en/articles/PortugalMarket2027/" id="lang-en">EN</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../pt/articles/PortugalMarket2027/" id="lang-pt">PT</a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../en/">
+<span data-i18n="nav_home">Home</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../en/services/">
+<span data-i18n="nav_services">Services</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../en/articles/">
+<span data-i18n="nav_articles">Articles</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../../../en/contact/">
+<span data-i18n="nav_contact">Contact</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
+<!-- ================= PAGE 1: HOME / ABOUT ================= -->
+<!-- ================= PAGE 2: SERVICES ================= -->
+<!-- ================= PAGE 3: ARTICLES ================= -->
+<!-- ================= PAGE 4: CONTACT ================= -->
+<section class="page-section active" id="article-detail"><article class="bg-cream rounded-3xl w-full p-5 sm:p-10 border border-gold/30 relative space-y-5 shadow-lg" style="min-width:0;overflow-wrap:break-word"><span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">For homeowners moving to their next home</span><h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight">How to Sell Your Home and Buy Another Without Getting Stuck Between Moves</h1><p class="text-charcoal-light text-lg font-light">Three ways to move home in Portugal</p><div class="w-16 h-0.5 bg-gold"></div><div class="text-charcoal-light text-base leading-relaxed space-y-5 font-light break-words"><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">Your current home no longer feels quite right. Maybe your family needs more space, or you have your eye on a different area. Then comes the awkward question: do you sell first and hope you find somewhere to go, or buy the next place and hope your current home sells quickly?</p><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">There is no single answer that works for everyone. It depends on your savings, mortgage, and how much uncertainty you can comfortably manage. These are the three options I like to look at before a property goes on the market.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">First, work out what your next purchase really looks like</h2><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">The asking price of your current home is only a starting point. What matters is how much you would actually have left after repaying any mortgage and covering the costs of selling. You then need to compare that with the price of your next home, taxes and purchase expenses.</p><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">If you will need a new mortgage, speak to a bank or mortgage intermediary early. It helps you distinguish between options that are genuinely possible and those that only work on paper.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">Sell first, buy afterwards</h2><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">This often makes sense if you need the proceeds of your current sale to fund the next purchase. You sell, know exactly what you have available, and then look for your next home.</p><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">Ideally, you start researching the next market well before completing the sale. It may be possible to negotiate a later handover date with your buyer, but that arrangement needs to be agreed and recorded properly.</p><div class="bg-cream-card border border-gold/20 rounded-2xl p-5 sm:p-7 space-y-4 my-7"><p class="text-sm sm:text-base text-charcoal-light font-light leading-relaxed"><strong class="font-semibold text-charcoal">The upside:</strong> you have a clear budget and avoid carrying two properties at the same time.</p><p class="text-sm sm:text-base text-charcoal-light font-light leading-relaxed"><strong class="font-semibold text-charcoal">The risk:</strong> the right home may not appear before you have to move out. It is worth having a temporary accommodation plan.</p></div><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">Buy first, sell afterwards</h2><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">This may work if you have enough savings or a lender is prepared to finance the new home before you sell the old one. You can find the right place without an immediate deadline to leave your current home.</p><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">Before committing, check the deposit, taxes, bank valuation and whether you can afford the running costs of two homes for a while. A mortgage agreement in principle does not remove the lender’s later checks.</p><div class="bg-cream-card border border-gold/20 rounded-2xl p-5 sm:p-7 space-y-4 my-7"><p class="text-sm sm:text-base text-charcoal-light font-light leading-relaxed"><strong class="font-semibold text-charcoal">The upside:</strong> you can move at your own pace and avoid temporary accommodation.</p><p class="text-sm sm:text-base text-charcoal-light font-light leading-relaxed"><strong class="font-semibold text-charcoal">The risk:</strong> the sale could take longer than expected, leaving you with an uncomfortable financial burden.</p></div><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">Prepare both transactions in parallel</h2><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">Here, you prepare your current home for sale while researching suitable properties to buy. The goal is to coordinate the timing as closely as possible.</p><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">This takes careful planning. The CPCV agreements, financing, completion deeds and key handovers all need attention. A lawyer should review the contractual dates and protections, including what happens if the bank or another party is delayed. Matching dates can never be guaranteed.</p><div class="bg-cream-card border border-gold/20 rounded-2xl p-5 sm:p-7 space-y-4 my-7"><p class="text-sm sm:text-base text-charcoal-light font-light leading-relaxed"><strong class="font-semibold text-charcoal">The upside:</strong> you may reduce the gap between selling and moving.</p><p class="text-sm sm:text-base text-charcoal-light font-light leading-relaxed"><strong class="font-semibold text-charcoal">The risk:</strong> a delay in one transaction can affect the other if there is no contingency plan.</p></div><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">Five questions I would ask first</h2><ul class="list-disc pl-6 space-y-2 my-5 text-charcoal-light"><li>What could your current home realistically sell for, rather than just be listed for?</li><li>How much will remain after mortgage repayment and selling costs?</li><li>What does the next home actually cost?</li><li>Will you need a new mortgage?</li><li>What happens if one transaction is delayed?</li></ul><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">Why I do not start with the listing</h2><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">Creating a property listing is the easy part. Pricing the home properly, checking its paperwork, preparing it for viewings and connecting the sale to your next purchase is where most of the work happens. Leave those decisions until later and they tend to arrive at the least convenient moment.</p><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">So before we go live, I work with the owner on the sequence of steps, check the property’s readiness with the relevant specialists, prepare its presentation and discuss realistic timelines. After publication, the focus can stay on genuine buyers, viewings and negotiations rather than last-minute problems.</p><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">This is not a promise to sell in a fixed number of days. It is a way to make the move easier to understand and manage.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">Questions I often hear</h2><details class="bg-cream-card border border-gold/20 rounded-xl px-5 py-4 my-3 group"><summary class="cursor-pointer font-semibold text-charcoal text-base">We only want to know what our home might sell for.</summary><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">Of course. That is a good starting point. But the number matters more when you know what you need for the next purchase and whether the proposed price is realistic enough to attract buyers without wasting months.</p></details><details class="bg-cream-card border border-gold/20 rounded-xl px-5 py-4 my-3 group"><summary class="cursor-pointer font-semibold text-charcoal text-base">We could list the property ourselves.</summary><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">Absolutely. The difficult part is not pressing Publish. It is the preparation, paperwork, positioning, assessing buyer interest and negotiating once enquiries begin.</p></details><details class="bg-cream-card border border-gold/20 rounded-xl px-5 py-4 my-3 group"><summary class="cursor-pointer font-semibold text-charcoal text-base">We are afraid of selling and then having nowhere to go.</summary><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">That is exactly why I prefer to plan the whole move first. We look at the next-home market, financing, handover dates and a backup option. It does not remove every risk, but you make the key decisions before you are under pressure.</p></details><aside class="bg-cream-card rounded-2xl border border-gold/25 p-6 sm:p-8 mt-10 space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-9 mb-4">Thinking about moving to a different home?</h2><p class="text-charcoal-light text-base sm:text-lg leading-relaxed font-light">We can start with a short conversation about your property, budget and timing. I will help you see which approach makes the most sense for your situation.</p><div class="flex flex-wrap gap-3 pt-2"><a class="gold-btn inline-block px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide" href="../../contact/">Discuss my situation</a><a class="gold-outline-btn inline-block px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide" href="https://wa.me/351911527581?text=Hello%21%20I%20would%20like%20to%20discuss%20selling%20my%20home%20and%20buying%20the%20next%20one." rel="noopener noreferrer" target="_blank">Message me on WhatsApp</a></div><p class="text-xs text-charcoal-light font-light pt-2">Irina Abasheva · Real Estate Consultant · CENTURY 21 Nações</p></aside></div><div class="pt-6 border-t border-gold/15"><a class="gold-outline-btn inline-block px-6 py-3 rounded-xl text-xs uppercase font-semibold" href="../">All articles</a></div></article></section></main>
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Real Estate &amp; Relocation Consultancy in Portugal</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../../../en/">Home</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../../../en/services/">Services</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../../../en/articles/">Articles</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../../../en/contact/">Contact</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">All rights reserved.</span>
+</div>
+</div>
+</footer>
+<script defer="True" src="../../../js/main.js"></script></body>
+</html>
