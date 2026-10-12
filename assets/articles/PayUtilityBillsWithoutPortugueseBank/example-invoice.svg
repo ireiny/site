@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 570" role="img" aria-label="Fatura fictícia com campos de pagamento, não válida para pagamentos">
+<defs><filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#5e4c32" flood-opacity=".11"/></filter></defs>
+<rect width="960" height="570" rx="28" fill="#FDFBF7"/>
+<rect x="94" y="36" width="772" height="498" rx="22" fill="#fff" stroke="#e8dbca" stroke-width="2" filter="url(#sh)"/>
+<rect x="95" y="37" width="770" height="96" rx="22" fill="#FAF6F0"/>
+<rect x="95" y="110" width="770" height="23" fill="#FAF6F0"/>
+<rect x="126" y="65" width="13" height="38" rx="6" fill="#C5A059"/>
+<text x="158" y="91" fill="#2C2A29" font-family="Arial,sans-serif" font-weight="700" font-size="30">FATURA</text>
+<rect x="646" y="64" width="186" height="38" rx="18" fill="#eee5d7"/>
+<text x="739" y="89" font-size="17" font-family="Arial,sans-serif" fill="#9A7B39" font-weight="700" text-anchor="middle">EXEMPLO FICTÍCIO</text>
+<text x="134" y="179" font-size="21" font-family="Arial,sans-serif" fill="#4A4846">Serviço</text>
+<text x="134" y="211" font-size="25" font-weight="600" font-family="Arial,sans-serif" fill="#2C2A29">Água / Eletricidade</text>
+<text x="695" y="179" font-size="17" font-family="Arial,sans-serif" fill="#696158">Data limite</text>
+<text x="695" y="209" font-size="21" font-family="Arial,sans-serif" fill="#2C2A29">DD/MM/AAAA</text>
+<path d="M134 245H826" stroke="#e8dbca" stroke-width="2"/>
+<text x="134" y="286" font-size="19" fill="#857c70" font-family="Arial,sans-serif">Entidade</text>
+<text x="134" y="320" font-size="29" fill="#2C2A29" font-family="Arial,sans-serif" font-weight="700">XXXXX</text>
+<text x="416" y="286" font-size="19" fill="#857c70" font-family="Arial,sans-serif">Referência</text>
+<text x="416" y="320" font-size="29" fill="#2C2A29" font-family="Arial,sans-serif" font-weight="700">XXX XXX XXX</text>
+<rect x="134" y="345" width="692" height="90" rx="15" fill="#FAF6F0" stroke="#e8dbca"/>
+<text x="158" y="382" font-size="20" fill="#857c70" font-family="Arial,sans-serif">Montante</text>
+<text x="158" y="420" font-size="30" fill="#9A7B39" font-family="Arial,sans-serif" font-weight="700">32,40 €</text>
+<text x="134" y="479" font-size="16" fill="#8b8276" font-family="Arial,sans-serif">Valores ilustrativos. Não utilizar para efetuar pagamentos.</text>
+</svg>
