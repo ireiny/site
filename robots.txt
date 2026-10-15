@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abasheva.pt/sitemap.xml
