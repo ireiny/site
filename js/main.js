@@ -24,11 +24,11 @@ async function submitContactByEmail(event) {
   // Grab the security verification token from Turnstile
   const turnstileToken = document.querySelector('[name="cf-turnstile-response"]')?.value;
 
-  if (!turnstileToken) {
-    statusText.style.color = "#ef4444"; // Tailwind red-500
-    statusText.textContent = "Por favor, complete a verificação de segurança.";
-    return false;
-  }
+  // if (!turnstileToken) {
+  //   statusText.style.color = "#ef4444"; // Tailwind red-500
+  //   statusText.textContent = "Por favor, complete a verificação de segurança.";
+  //   return false;
+  // }
 
   // Update button interface state
   submitBtn.disabled = true;
