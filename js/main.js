@@ -47,7 +47,7 @@ async function submitContactByEmail(event) {
 
   try {
     // Replace with your real live Cloudflare Worker URL
-    const response = await fetch('https://workers.dev', {
+    const response = await fetch('https://worker.abasheva.pt', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
