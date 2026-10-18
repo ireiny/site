@@ -14,11 +14,62 @@ document.addEventListener('DOMContentLoaded', () => {
     if (match) select.value = match.value;
   }
 });
-function submitContactByEmail(event) {
+async function submitContactByEmail(event) {
+  // Prevent the default HTML form submission page refresh
   event.preventDefault();
-  const value = id => (document.getElementById(id)?.value || '').trim();
-  const subject = 'Website enquiry: ' + value('form-service-select');
-  const body = ['Name: '+value('form-name-input'),'Phone: '+value('form-phone-input'),'Email: '+value('form-email-input'),'Service: '+value('form-service-select'),'','Message: '+value('form-message-input')].join('\n');
-  window.location.href = 'mailto:prohomeportugal@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  
+  const submitBtn = document.getElementById('submitBtn');
+  const statusText = document.getElementById('formStatus');
+  
+  // Grab the security verification token from Turnstile
+  const turnstileToken = document.querySelector('[name="cf-turnstile-response"]')?.value;
+
+  if (!turnstileToken) {
+    statusText.style.color = "#ef4444"; // Tailwind red-500
+    statusText.textContent = "Por favor, complete a verificação de segurança.";
+    return false;
+  }
+
+  // Update button interface state
+  submitBtn.disabled = true;
+  statusText.style.color = "#4a4846"; // Charcoal light color from your design palette
+  statusText.textContent = "A enviar...";
+
+  // Collect the values using your explicit input field IDs
+  const formData = {
+    name: document.getElementById('form-name-input').value,
+    phone: document.getElementById('form-phone-input').value,
+    email: document.getElementById('form-email-input').value,
+    service: document.getElementById('form-service-select').value,
+    message: document.getElementById('form-message-input').value,
+    turnstileToken: turnstileToken
+  };
+
+  try {
+    // Replace with your real live Cloudflare Worker URL
+    const response = await fetch('https://workers.dev', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      statusText.style.color = "#9a7b39"; // Matching your gold-dark layout style
+      statusText.textContent = "Mensagem enviada com sucesso!";
+      document.getElementById('contact-form').reset();
+      
+      // Clear security challenge token value locally
+      if (typeof turnstile !== 'undefined') turnstile.reset();
+    } else {
+      statusText.style.color = "#ef4444";
+      statusText.textContent = "Erro no servidor. Por favor, tente novamente mais tarde.";
+    }
+  } catch (error) {
+    statusText.style.color = "#ef4444";
+    statusText.textContent = "Erro de rede. Verifique a sua ligação à internet.";
+  } finally {
+    submitBtn.disabled = false;
+  }
+
   return false;
 }
