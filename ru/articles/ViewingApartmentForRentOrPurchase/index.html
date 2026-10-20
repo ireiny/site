@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Готовимся к просмотру квартиры для аренды или покупки | Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+<meta content="Как оплатить счёт за воду, электричество или газ наличными в CTT и Payshop, если у вас нет португальского банковского счёта." name="description"/><link href="https://ireiny.github.io/site/ru/articles/PortugalMarket2027/" rel="canonical"/><meta content="https://ireiny.github.io/site/assets/articles/PayUtilityBillsWithoutPortugueseBank/pay-utility-bill.webp" property="og:image"/><link href="https://ireiny.github.io/site/ru/articles/SellAndBuyNextHome/" hreflang="ru" rel="alternate"/><link href="https://ireiny.github.io/site/en/articles/SellAndBuyNextHome/" hreflang="en" rel="alternate"/><link href="https://ireiny.github.io/site/pt/articles/SellAndBuyNextHome/" hreflang="pt" rel="alternate"/><meta content="20 проверок района, здания и квартиры перед покупкой или арендой. Отмечайте пункты прямо на странице." name="description"/><style>.guide-item .guide-text{transition:opacity .15s ease}.guide-check:checked + .guide-text{opacity:.42}.guide-check:focus-visible{outline:2px solid #C5A059;outline-offset:3px}</style></head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../../../ru/">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../ru/" id="nav-home">
+<span data-i18n="nav_home">Главная</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../ru/services/" id="nav-services">
+<span data-i18n="nav_services">Услуги</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../../../ru/articles/" id="nav-articles">
+<span data-i18n="nav_articles">Статьи</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../../ru/contact/" id="nav-contact">
+<span data-i18n="nav_contact">Контакты</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors font-semibold bg-gold text-white active-lang" href="../../../ru/articles/ViewingApartmentForRentOrPurchase/" id="lang-ru">RU</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../en/articles/ViewingApartmentForRentOrPurchase/" id="lang-en">EN</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../articles/ViewingApartmentForRentOrPurchase/" id="lang-pt">PT</a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../ru/">
+<span data-i18n="nav_home">Главная</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../ru/services/">
+<span data-i18n="nav_services">Услуги</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../../ru/articles/">
+<span data-i18n="nav_articles">Статьи</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../../../ru/contact/">
+<span data-i18n="nav_contact">Контакты</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12"><section class="page-section active" id="article-detail"><article class="bg-cream rounded-3xl w-full p-5 sm:p-10 border border-gold/30 relative space-y-6 shadow-lg" style="min-width:0;overflow-wrap:break-word"><span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">Гайд · чек-лист</span>
+<h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight">ГОТОВИМСЯ К ПРОСМОТРУ КВАРТИРЫ ДЛЯ АРЕНДЫ ИЛИ ПОКУПКИ</h1>
+<p class="text-lg sm:text-xl font-serif text-gold-dark">На что нужно обратить внимание</p>
+<div class="w-16 h-0.5 bg-gold"></div>
+<p class="text-charcoal-light leading-relaxed">В этом гайде можно отмечать пункты, которые вы уже проверили.</p>
+<p class="text-charcoal-light leading-relaxed">Первое, с чего бы я начала осмотр квартиры, — это <strong>локация и инфраструктура</strong>. Причём первый осмотр района можно сделать ещё до просмотра самой квартиры.</p><p class="text-charcoal-light leading-relaxed">Исследование можно начать с Google Maps и Street View. Но, конечно, просмотр картинок не даст полного ощущения от района, поэтому выезд на место настоятельно рекомендован.</p><p class="text-charcoal-light leading-relaxed">Итак!</p>
+<p class="text-charcoal-light leading-relaxed">Если локация вас устраивает, начинаем осматривать дом и квартиру.</p>
+<div class="space-y-10" id="new-checklist">
+<div class="flex flex-wrap justify-between gap-3 items-center rounded-xl bg-cream-card border border-gold/20 p-4"><span class="text-sm text-charcoal-light">На что обратить внимание во время просмотра</span><strong aria-live="polite" class="text-gold-dark" id="check-count">Проверено: 0 из 20</strong></div><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">1. Локация и инфраструктура</h2><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="1" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">1. Транспортная доступность и трафик.</strong> Проверьте дорогу от дома до работы или школы в часы пик (утром и вечером). Оцените расстояние до ближайших остановок общественного транспорта или метро. Можно использовать Google Maps с функцией оценки времени, необходимого для того, чтобы добраться до нужного места в определённое время. Сравните, насколько время в часы пик отличается от времени в выходной или днём.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="2" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">2. Близость инфраструктуры.</strong> Убедитесь, что в пешей доступности есть супермаркеты, аптеки, поликлиники, школы или детские сады (если актуально). Осмотр также можно начать с карты — возможно, район вам уже не подойдёт из-за отсутствия необходимой инфраструктуры.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="3" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">3. Парковка.</strong> Проверьте наличие закреплённого парковочного места, подземного паркинга или загруженность парковочных мест возле дома вечером. Это лучше делать на месте и желательно вечером, если вы планируете пользоваться автомобилем. Также уточните, есть ли платная парковка и возможность оформить резидентское разрешение.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="4" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">4. Безопасность района.</strong> Оцените освещённость улиц вечером и общее ощущение безопасности. Иногда достаточно просто прогуляться по району вечером, чтобы понять, насколько там спокойно.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="5" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">5. Окружение и шум.</strong> Посетите район в разное время суток (днём, вечером, в выходные). Нет ли поблизости ресторана, бара, коммерческой кухни, гаражных ворот, железной дороги или оборудования, создающего шум, запахи и вибрации?</span></label></section><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">2. Состояние здания и территории</h2><div class="p-4 rounded-xl border border-gold/25 bg-cream-card text-sm text-charcoal-light">В идеале квартиру лучше осматривать в дождливую погоду или зимой — тогда больше шансов заметить проблемы с влажностью и изоляцией.</div><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="6" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">6. Состояние подъезда и лифтов.</strong> Чистота и запах в подъезде, наличие кодового замка или домофона, исправность лифтов (особенно если квартира на высоком этаже) могут многое рассказать о состоянии здания и его обслуживании. Спросите о последних ремонтах крыши и фасада.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="7" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">7. Размер платы за condomínio (для покупки).</strong> Уточните у продавца, есть ли организованное управление condomínio и сколько вы будете платить ежемесячно. Спросите, планируются ли крупные ремонтные работы, которые потребуют дополнительных взносов.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="8" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">8. Придомовая территория.</strong> Оцените детские и спортивные площадки, зоны отдыха, места для сбора мусора и их удалённость от окон.</span></label></section><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">3. Техническое состояние квартиры</h2><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="9" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">9. Состояние сантехники и напор воды.</strong> С разрешения владельца включите краны на кухне и в ванной одновременно, проверьте напор, скорость нагрева воды и слив. По возможности осмотрите трубы под раковинами на предмет протечек.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="10" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">10. Нагрев воды.</strong> Проверьте, как нагревается вода: есть ли газовый проточный водонагреватель (esquentador), электрический накопительный бойлер (termoacumulador) или другое оборудование. Газовый проточный водонагреватель может быть удобным решением для большой семьи, поскольку не ограничен объёмом накопительного бака. А небольшой электрический бойлер имеет ограниченный запас горячей воды — возможно, кому-то придётся домывать голову уже холодной водой. Уточните объём бака и исправность оборудования.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="11" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">11. Электрика и розетки.</strong> Осмотрите розетки, выключатели и состояние электрощитка. Насколько они современные и в хорошем ли состоянии? Замена электрики в Португалии — недешёвое удовольствие. Убедитесь, что розеток достаточно для ваших приборов.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="12" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">12. Отопление и вентиляция.</strong> Проверьте, есть ли кондиционеры или другие источники отопления. По возможности оцените работу вентиляции на кухне и в ванной. Иногда тягу можно предварительно проверить с помощью лёгкой салфетки, но такой тест не заменяет техническую проверку. Если в квартире есть камин, уточните, оборудован ли он рекуператором тепла (recuperador de calor) или это обычный открытый камин. Последний может приводить к значительным потерям тепла.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="13" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">13. Окна и изоляция.</strong> Проверьте целостность стеклопакетов, отсутствие сквозняков и уровень шума при закрытых окнах. Обратите внимание, какие оконные рамы установлены — пластиковые (PVC) или алюминиевые, есть ли двойное остекление (vidro duplo), терморазрыв (corte térmico), конденсат или повреждённые уплотнители. Материал рамы сам по себе не определяет качество окна. Проверьте, хорошо ли открываются и закрываются окна и жалюзи.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="14" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">14. На какую сторону выходят окна.</strong> Откройте в телефоне приложение «Компас» и проверьте, куда выходят окна. Не верьте на слово продавцу — иногда ориентацию называют неточно. Северные комнаты обычно получают меньше прямого солнца и могут быть холоднее зимой, а южные — сильнее нагреваться летом. Многое зависит от затенения, окон и теплоизоляции. Хорошо, когда квартира имеет окна на разные стороны света — это может улучшить естественное освещение и проветривание.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="15" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">15. Обратите внимание насколько близко соседние здания,</strong> не смотрят ли соседи прямо в окна, хватает ли дневного света.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="16" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">16. Следы плесени и сырости.</strong> Внимательно осмотрите углы и потолки в комнатах, потолок в ванной, силикон вокруг ванной или душевой, стыки около окон и стены за мебелью, если есть доступ. Обратите внимание на запах сырости, вздутую краску и следы свежего ремонта. Плесень — потенциально опасный фактор для здоровья.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="17" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">17. Прошлые протечки и ремонт.</strong> Спросите, были ли infiltrações (протечки и проникновение влаги). Почему недавно перекрашивали стену, если это применимо? Есть ли повторяющиеся проблемы с крышей, террасой или трубами?</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="18" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">17. Состояние пола, стен и дверей.</strong> Проверьте ровность полов, не скрипят ли они, нет ли вздутий, трещин, отслоившейся плитки. Проверьте работу межкомнатных и входных дверей — легко ли они закрываются.</span></label></section><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">4. Мобильная связь и интернет</h2><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="19" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">18. Качество мобильной связи.</strong> Проверьте уровень сигнала вашего мобильного оператора во всех комнатах. Особенно если вы работаете из дома.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="20" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">19. Доступные интернет-провайдеры.</strong> Уточните, какие провайдеры обслуживают дом и доступно ли высокоскоростное подключение, в том числе оптоволокно (fibra). Лучше проверить возможность подключения по конкретному адресу, а не только по району.</span></label></section></div><div class="bg-cream-card border border-gold/20 rounded-xl p-5"><p class="font-semibold text-charcoal mb-2">Совет</p><p class="text-charcoal-light leading-relaxed">Не стесняйтесь задавать вопросы, а также делать фотографии и записывать видео при осмотре с разрешения владельца или жильцов. Если есть возможность, поговорите с соседями — они часто знают о доме то, о чём умолчит продавец или риелтор.</p></div>
+<p class="text-xs text-charcoal-light">Этот список помогает подготовиться к просмотру, но не заменяет техническую и юридическую проверку объекта до подписания договора.</p>
+<div class="rounded-2xl bg-cream-card p-6 sm:p-8 border border-gold/25 space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">Посмотрим квартиру вместе?</h2><p class="text-charcoal-light leading-relaxed">Я буду рада пройти этот процесс вместе с вами. Помогу оценить квартиру профессиональным взглядом, увидеть её сильные стороны и заметить детали, которые легко упустить. Оставьте заявку или напишите мне в WhatsApp, и мы обсудим ваш поиск.</p><div class="flex flex-wrap gap-3"><a class="gold-btn inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold" href="../../contact/">Оставить заявку</a><a class="gold-outline-btn inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold" href="https://wa.me/351911527581?text=%D0%93%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D0%BC%D1%81%D1%8F%20%D0%BA%20%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%83%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B%20%D0%B4%D0%BB%D1%8F%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D1%8B%20%D0%B8%D0%BB%D0%B8%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B8" rel="noopener noreferrer" target="_blank">Написать в WhatsApp</a></div><p class="text-sm text-charcoal-light">Irina Abasheva · CENTURY 21 Nações · +351 911 527 581 · prohomeportugal@gmail.com</p></div>
+<a class="inline-block text-gold-dark underline text-sm" href="../">← Все статьи</a></article></section></main>
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Недвижимость и консультации в Португалии</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../../../ru/">Главная</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../../../ru/services/">Услуги</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../../../ru/articles/">Статьи</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../../../ru/contact/">Контакты</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">Все права защищены.</span>
+</div>
+</div>
+</footer>
+<script defer="True" src="../../../js/main.js"></script><script>document.addEventListener('DOMContentLoaded',function(){const items=document.querySelectorAll('.viewing-check');const output=document.getElementById('progress-count');function update(){output.textContent='Отмечено'+': '+Array.from(items).filter(x=>x.checked).length+' из 15';}items.forEach(x=>x.addEventListener('change',update));update();});</script><script>document.addEventListener('DOMContentLoaded',()=>{const all=[...document.querySelectorAll('.guide-check')],count=document.getElementById('check-count');const update=()=>{count.textContent='Проверено'+': '+all.filter(c=>c.checked).length+' '+'из'+' 20';};all.forEach(c=>c.addEventListener('change',update));update();});</script></body>
+</html>
