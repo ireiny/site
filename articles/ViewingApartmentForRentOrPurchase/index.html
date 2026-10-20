@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Preparar uma visita a um apartamento para arrendar ou comprar | Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+<meta content="Como pagar faturas de água, eletricidade ou gás em dinheiro nos CTT ou na Payshop sem conta bancária portuguesa." name="description"/><link href="https://ireiny.github.io/site/pt/articles/PortugalMarket2027/" rel="canonical"/><meta content="https://ireiny.github.io/site/assets/articles/PayUtilityBillsWithoutPortugueseBank/pay-utility-bill.webp" property="og:image"/><link href="https://ireiny.github.io/site/ru/articles/SellAndBuyNextHome/" hreflang="ru" rel="alternate"/><link href="https://ireiny.github.io/site/en/articles/SellAndBuyNextHome/" hreflang="en" rel="alternate"/><link href="https://ireiny.github.io/site/pt/articles/SellAndBuyNextHome/" hreflang="pt" rel="alternate"/><meta content="20 verificações úteis sobre a zona, o prédio e o apartamento antes de comprar ou arrendar. Assinale cada ponto durante a visita." name="description"/><style>.guide-item .guide-text{transition:opacity .15s ease}.guide-check:checked + .guide-text{opacity:.42}.guide-check:focus-visible{outline:2px solid #C5A059;outline-offset:3px}</style></head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../../">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../" id="nav-home">
+<span data-i18n="nav_home">Início</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../services/" id="nav-services">
+<span data-i18n="nav_services">Serviços</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../../articles/" id="nav-articles">
+<span data-i18n="nav_articles">Artigos</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../contact/" id="nav-contact">
+<span data-i18n="nav_contact">Contactos</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../ru/articles/ViewingApartmentForRentOrPurchase/" id="lang-ru">RU</a>
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../en/articles/ViewingApartmentForRentOrPurchase/" id="lang-en">EN</a>
+<a class="px-2.5 py-1 rounded-full transition-colors font-semibold bg-gold text-white active-lang" href="../../articles/ViewingApartmentForRentOrPurchase/" id="lang-pt">PT</a>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../">
+<span data-i18n="nav_home">Início</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../services/">
+<span data-i18n="nav_services">Serviços</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../articles/">
+<span data-i18n="nav_articles">Artigos</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../../contact/">
+<span data-i18n="nav_contact">Contactos</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12"><section class="page-section active" id="article-detail"><article class="bg-cream rounded-3xl w-full p-5 sm:p-10 border border-gold/30 relative space-y-6 shadow-lg" style="min-width:0;overflow-wrap:break-word"><span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">Guia · Checklist</span>
+<h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight">Preparar uma visita a um apartamento para arrendar ou comprar</h1>
+<p class="text-lg sm:text-xl font-serif text-gold-dark">O que vale a pena verificar durante a visita</p>
+<div class="w-16 h-0.5 bg-gold"></div>
+<p class="text-charcoal-light leading-relaxed">Neste guia pode assinalar os pontos que já verificou durante a visita.</p>
+<p class="text-charcoal-light leading-relaxed">Eu começaria pela zona, antes mesmo de entrar no apartamento. Pode explorar o bairro no Google Maps e no Street View e calcular o tempo até ao trabalho, à escola ou aos locais que frequenta. Mas as imagens não mostram como é realmente viver ali. Por isso, aconselho sempre a fazer uma visita à zona e passear um pouco. <a class="text-gold-dark underline" href="https://www.google.com/maps" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
+<p class="text-charcoal-light leading-relaxed">Se a localização lhe agradar, está na altura de observar o prédio e o apartamento.</p>
+<div class="space-y-10" id="new-checklist">
+<div class="flex flex-wrap justify-between gap-3 items-center rounded-xl bg-cream-card border border-gold/20 p-4"><span class="text-sm text-charcoal-light">O que vale a pena verificar durante a visita</span><strong aria-live="polite" class="text-gold-dark" id="check-count">Verificados: 0 de 20</strong></div><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">1. Localização e infraestruturas</h2><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="1" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">1. Transportes e trânsito.</strong> Verifique o percurso para o trabalho ou escola nas horas de ponta, de manhã e ao fim do dia, e a distância aos transportes públicos ou ao metro. No Google Maps pode escolher a hora de partida ou chegada. Compare com o tempo fora das horas de ponta.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="2" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">2. Serviços por perto.</strong> Veja se existem supermercados, farmácias, centros de saúde, escolas ou creches a uma distância confortável a pé, conforme as suas necessidades. Vale a pena começar esta pesquisa no mapa.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="3" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">3. Estacionamento.</strong> Pergunte se existe lugar privativo ou garagem. Veja também como é estacionar na rua ao fim do dia, se há zonas pagas e se pode pedir dístico de residente.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="4" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">4. Segurança da zona.</strong> Observe a iluminação das ruas e se se sente confortável naquele ambiente. Uma caminhada ao fim do dia pode dar-lhe outra perspetiva.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="5" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">5. Ruído e vizinhança.</strong> Passe na zona em horários diferentes. Repare em bares, restaurantes, cozinhas comerciais, portões de garagem, comboios e equipamentos que possam provocar ruído, cheiros ou vibrações.</span></label></section><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">2. Estado do prédio e espaços comuns</h2><div class="p-4 rounded-xl border border-gold/25 bg-cream-card text-sm text-charcoal-light">Se puder escolher, faça a visita num dia de chuva ou durante o inverno. É mais fácil identificar problemas de humidade e isolamento nessas condições.</div><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="6" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">6. Entrada e elevador.</strong> Observe a limpeza e os cheiros nas zonas comuns, o sistema de entrada e os elevadores. Pergunte quando foram feitas as últimas obras no telhado e na fachada.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="7" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">7. Condomínio na compra.</strong> Saiba quanto se paga regularmente de condomínio, se existe administração e se estão previstas ou aprovadas obras importantes com quotas extraordinárias.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="8" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">8. Espaços exteriores.</strong> Veja onde ficam os parques infantis, zonas de descanso e contentores do lixo, sobretudo em relação às janelas do apartamento.</span></label></section><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">3. Estado técnico do apartamento</h2><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="9" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">9. Canalização e pressão da água.</strong> Com autorização do proprietário, abra as torneiras da cozinha e da casa de banho, verifique a pressão, a água quente e o escoamento. Veja se há fugas nos tubos acessíveis por baixo dos lavatórios.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="10" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">10. Aquecimento da água.</strong> Pergunte se há esquentador a gás, termoacumulador elétrico ou outro sistema. Se houver depósito, confirme a capacidade, especialmente para famílias, e o estado do equipamento.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="11" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">11. Instalação elétrica e tomadas.</strong> Observe tomadas, interruptores e quadro elétrico. Há tomadas suficientes? Substituir uma instalação elétrica antiga pode ser dispendioso.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="12" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">12. Aquecimento e ventilação.</strong> Verifique como se aquece a casa, se os aparelhos de ar condicionado funcionam e como é feita a ventilação da cozinha e da casa de banho. Um lenço leve pode dar uma indicação aproximada da circulação de ar, mas não substitui uma inspeção. Se houver lareira, pergunte se é aberta ou tem recuperador de calor.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="13" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">13. Janelas e isolamento.</strong> Abra janelas e estores. Procure correntes de ar, condensação, vedantes danificados e ruído exterior. Pergunte se há vidro duplo e corte térmico. PVC ou alumínio, por si só, não definem a qualidade da janela.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="14" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">14. Orientação solar.</strong> Use a bússola do telemóvel e confirme para onde estão viradas as janelas. Os quartos a norte costumam receber menos sol direto e os espaços a sul podem aquecer mais no verão. O sombreamento e o isolamento também contam. Janelas em fachadas diferentes podem facilitar a ventilação.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="15" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">15. Prédios próximos e luz natural.</strong> Repare na distância aos edifícios vizinhos, na privacidade das janelas e na quantidade de luz natural.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="16" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">16. Bolor e humidade.</strong> Veja cantos, tetos, casa de banho, silicone do duche, zonas junto às janelas e paredes atrás dos móveis, se acessíveis. Atenção a cheiro a mofo, tinta empolada ou pinturas recentes. O bolor pode prejudicar a saúde.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="17" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">17. Infiltrações anteriores.</strong> Pergunte se houve infiltrações, porque foram pintadas certas paredes e se existem problemas recorrentes no telhado, terraço ou canalização.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="18" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">18. Pavimentos, paredes e portas.</strong> Verifique se o chão range ou está levantado, se há fissuras ou azulejos soltos. Experimente abrir e fechar as portas interiores e a porta de entrada.</span></label></section><section class="space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">4. Rede móvel e internet</h2><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="19" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">19. Rede móvel.</strong> Teste o sinal da sua operadora em todas as divisões, sobretudo se trabalha a partir de casa.</span></label><label class="flex gap-4 items-start rounded-xl bg-cream-card border border-gold/15 px-4 py-4 cursor-pointer hover:border-gold/40 guide-item"><input class="guide-check mt-1 w-5 h-5 shrink-0" data-item="20" style="accent-color:#C5A059" type="checkbox"/><span class="guide-text text-charcoal-light text-sm sm:text-base font-light leading-relaxed"><strong class="font-semibold">20. Internet disponível.</strong> Confirme quais os operadores que servem a morada e se há fibra ótica. A existência de fibra na zona não garante a instalação naquele prédio.</span></label></section></div><div class="bg-cream-card border border-gold/20 rounded-xl p-5"><p class="font-semibold text-charcoal mb-2">Uma dica</p><p class="text-charcoal-light leading-relaxed">Não tenha receio de fazer perguntas. Com autorização do proprietário ou dos ocupantes, tire fotografias e faça pequenos vídeos para comparar vários imóveis com calma. Se puder falar com os vizinhos, aproveite. Às vezes conhecem pormenores do prédio que não são visíveis durante a visita.</p></div>
+<p class="text-xs text-charcoal-light">Esta lista ajuda a preparar a visita, mas não substitui uma verificação técnica e jurídica antes da assinatura de um contrato.</p>
+<div class="rounded-2xl bg-cream-card p-6 sm:p-8 border border-gold/25 space-y-4"><h2 class="font-serif text-2xl sm:text-3xl text-charcoal">Vamos visitar o imóvel juntos?</h2><p class="text-charcoal-light leading-relaxed">Terei todo o gosto em acompanhá-lo neste processo. Posso ajudar a avaliar o imóvel com um olhar profissional, identificar os seus pontos fortes e chamar a atenção para detalhes que facilmente passam despercebidos. Deixe um pedido de contacto ou escreva-me pelo WhatsApp para falarmos do que procura.</p><div class="flex flex-wrap gap-3"><a class="gold-btn inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold" href="../../contact/">Pedir contacto</a><a class="gold-outline-btn inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold" href="https://wa.me/351911527581?text=Preparar%20uma%20visita%20a%20um%20apartamento%20para%20arrendar%20ou%20comprar" rel="noopener noreferrer" target="_blank">Escrever no WhatsApp</a></div><p class="text-sm text-charcoal-light">Irina Abasheva · CENTURY 21 Nações · +351 911 527 581 · prohomeportugal@gmail.com</p></div>
+<a class="inline-block text-gold-dark underline text-sm" href="../">← Todos os artigos</a></article></section></main>
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Consultoria Imobiliária em Portugal</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../../">Início</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../../services/">Serviços</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../../articles/">Artigos</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../../contact/">Contactos</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">Todos os direitos reservados.</span>
+</div>
+</div>
+</footer>
+<script defer="True" src="../../js/main.js"></script><script>document.addEventListener('DOMContentLoaded',function(){const items=document.querySelectorAll('.viewing-check');const output=document.getElementById('progress-count');function update(){output.textContent='Verificados'+': '+Array.from(items).filter(x=>x.checked).length+' de 15';}items.forEach(x=>x.addEventListener('change',update));update();});</script><script>document.addEventListener('DOMContentLoaded',()=>{const all=[...document.querySelectorAll('.guide-check')],count=document.getElementById('check-count');const update=()=>{count.textContent='Verificados'+': '+all.filter(c=>c.checked).length+' '+'de'+' 20';};all.forEach(c=>c.addEventListener('change',update));update();});</script></body>
+</html>
