@@ -1,0 +1,36 @@
+(()=>{'use strict';
+const q=x=>document.getElementById(x);const value=id=>Math.max(0,Number(q(id)?.value)||0);const euro=n=>new Intl.NumberFormat('pt-PT',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
+const factors={"1989":3.07,"1990":2.75,"1991":2.43,"1992":2.23,"1993":2.05,"1994":1.96,"1995":1.88,"1996":1.84,"1997":1.81,"1998":1.76,"1999":1.74,"2000":1.71,"2001":1.58,"2002":1.52,"2003":1.48,"2004":1.46,"2005":1.43,"2006":1.37,"2007":1.35,"2008":1.31,"2009":1.33,"2010":1.31,"2011":1.27,"2012":1.23,"2013":1.23,"2014":1.23,"2015":1.23,"2016":1.22,"2017":1.21,"2018":1.2,"2019":1.2,"2020":1.2,"2021":1.19,"2022":1.08,"2023":1.04,"2024":1.02,"2025":1,"2026":1};
+const brackets=[8342,12587,17838,23089,29397,43090,46566,86634,Infinity];const rates=[.125,.157,.212,.241,.311,.349,.431,.446,.48];
+function progressive(x){let total=0,prev=0;for(let i=0;i<brackets.length;i++){const amount=Math.max(0,Math.min(x,brackets[i])-prev);total+=amount*rates[i];prev=brackets[i];if(x<=prev)break;}return total;}
+function solidarity(x){return Math.max(0,Math.min(x,250000)-80000)*.025+Math.max(0,x-250000)*.05;}
+function imt(v,nonResident,purpose){
+ if(nonResident)return v*.075;
+ if(v<=0)return 0;
+ const hpp=purpose==='hpp',zero=hpp?106346:0;
+ const bands=hpp?[[106346,0],[145470,.02],[198347,.05],[330539,.07],[660982,.08]]:[[106346,.01],[145470,.02],[198347,.05],[330539,.07],[633931,.08]];
+ const limit=hpp?660982:633931;
+ if(v>1150853)return v*.075;
+ if(v>limit)return v*.06;
+ let amount=0,previous=0;
+ for(const [upper,rate] of bands){amount+=Math.max(0,Math.min(v,upper)-previous)*rate;previous=upper;if(v<=upper)break;}
+ return Math.max(0,amount);
+}
+const strings={ru:{unavailable:'Для этой ситуации нужен индивидуальный расчёт: мы не показываем неточную сумму.',year:'Для покупки до 1989 года или года вне диапазона нужен отдельный расчёт.',reinvest:'Предполагается, что вы направите весь доступный остаток на новое основное жильё. Полное освобождение не гарантировано.',no:'Стандартное освобождение при реинвестировании не применено автоматически.',noteTax:'С учётом приблизительного налога на mais-valias.',noteNo:'Без расчёта возможного налога с продажи.',taxSecond:'Для этой оценки освобождение при реинвестировании не применяется, потому что новое жильё не выбрано как основное постоянное.'},pt:{unavailable:'Esta situação exige uma análise individual. Não mostramos um valor potencialmente incorreto.',year:'Aquisições anteriores a 1989 ou fora do intervalo exigem análise separada.',reinvest:'Assumimos que utiliza todo o valor disponível na próxima habitação própria e permanente. A isenção total não está garantida.',no:'Não foi aplicada automaticamente a isenção habitual por reinvestimento.',noteTax:'Inclui uma estimativa de imposto sobre mais-valias.',noteNo:'Sem estimativa de IRS sobre a venda.',taxSecond:'Não aplicamos a exclusão por reinvestimento porque a nova casa não foi indicada como habitação própria e permanente.'},en:{unavailable:'This situation needs an individual review; we will not show a misleading figure.',year:'Purchases before 1989 or outside the valid range need a separate assessment.',reinvest:'We assume you use all sale proceeds available for the next main home. Full exemption is not guaranteed.',no:'The standard reinvestment exemption has not been applied automatically.',noteTax:'Includes an estimated capital gains tax.',noteNo:'Excludes possible capital gains tax on the sale.',taxSecond:'Reinvestment relief is not applied because the new property is not selected as a main permanent home.'}};
+const lang=document.documentElement.lang?.split('-')[0]||'pt',t=strings[lang]||strings.pt;let open=false,eligibleDebtEdited=false;
+function calc(){const sale=value('c-sale'),debt=value('c-debt'),fee=sale*.0615,net=sale-debt-fee,price=value('c-next'),resident=q('c-resident').checked,hpp=q('c-hpp').checked,purpose=document.querySelector('input[name="c-purpose"]:checked')?.value||'hpp',transfer=imt(price,!resident,purpose),stamp=price*.008,legal=value('c-legal'),total=price+transfer+stamp+legal;
+const set=(id,v)=>{if(q(id))q(id).textContent=euro(v)};for(const [id,v] of Object.entries({'c-fee':fee,'c-net':net,'c-price':price,'c-imt':transfer,'c-stamp':stamp,'c-legal-value':legal,'c-total':total,'c-total-again':total,'c-available':net}))set(id,v);
+q('c-good').classList.toggle('calc-hidden',!(resident&&hpp));q('c-bad').classList.toggle('calc-hidden',resident&&hpp);q('c-warning').classList.toggle('calc-hidden',net>=0);q('c-purpose-warning').classList.toggle('calc-hidden',purpose==='hpp');q('c-nonresident-warning').classList.toggle('calc-hidden',resident);
+let tax=0,hasTax=false;
+if(open){const y=Number(q('c-year').value),purchase=value('c-purchase'),eligibleDebt=Math.min(debt,value('c-eligible-debt')),income=value('c-income');const valid=Number.isInteger(y)&&y>=1989&&y<=2026&&purchase>0&&sale>0;
+q('c-tax-unavailable').classList.toggle('calc-hidden',valid);q('c-tax-output').classList.toggle('calc-hidden',!valid);q('c-tax-unavailable-text').textContent=(!Number.isInteger(y)||y<1989||y>2026)?t.year:t.unavailable;
+if(valid){let adjusted=purchase*(factors[y]||1);let gain=Math.max(0,sale-adjusted-fee-value('c-acquisition-costs')-value('c-sale-costs')-value('c-improve'));
+// Estimate only: available net proceeds are assumed to be reinvested in the next home, excluding purchase taxes and fees.
+let exemptShare=0;if(resident&&hpp&&purpose==='hpp'){const required=Math.max(0,sale-eligibleDebt);const contribution=Math.min(Math.max(0,net),price);exemptShare=required>0?Math.min(1,contribution/required):0;}
+const taxable=gain*(1-exemptShare)*.5;tax=Math.max(0,progressive(income+taxable)+solidarity(income+taxable)-progressive(income)-solidarity(income));
+set('c-gain',gain);set('c-taxable',taxable);set('c-tax',tax);q('c-tax-reinvest-msg').textContent=resident&&hpp&&purpose==='hpp'?t.reinvest:(purpose!=='hpp'?t.taxSecond:t.no);hasTax=true;}}
+q('c-tax-row').classList.toggle('calc-hidden',!hasTax);if(hasTax)set('c-tax-result',tax);
+const delta=total-(net-(hasTax?tax:0));q('c-need-label').classList.toggle('calc-hidden',delta<=0);q('c-remain-label').classList.toggle('calc-hidden',delta>0);set('c-result',Math.abs(delta));
+const note=q('c-result-note');if(note){const original=note.dataset.base||(note.dataset.base=note.textContent.replace(/^.*?(?=IMT |IMT e |IMT and )/,'').trim());note.textContent=(hasTax?t.noteTax:t.noteNo)+' '+original;}}
+const toggle=q('c-tax-toggle');const details=q('c-tax-details');if(toggle&&details){toggle.addEventListener('click',()=>{open=!open;toggle.setAttribute('aria-expanded',String(open));details.classList.toggle('calc-hidden',!open);toggle.querySelector('.tax-toggle-icon').textContent=open?'−':'+';calc();});}
+const eligibleInput=q('c-eligible-debt');if(eligibleInput)eligibleInput.addEventListener('input',()=>{eligibleDebtEdited=true;});const mainDebt=q('c-debt');if(mainDebt)mainDebt.addEventListener('input',()=>{if(!eligibleDebtEdited&&eligibleInput)eligibleInput.value=mainDebt.value;});document.querySelectorAll('.calculator input').forEach(el=>el.addEventListener('input',calc));calc();})();
