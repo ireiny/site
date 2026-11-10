@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Two new bridges on Lisbon’s south bank: why have people waited decades, and when might they open? | Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+<meta content="Two new bridges on Lisbon’s south bank: why have people waited decades, and when might they open?" name="description"/><link href="https://abasheva.pt/en/articles/TwoBridgesMargemSul/" rel="canonical"/><meta content="https://abasheva.pt/assets/articles/TwoBridgesMargemSul/bridge-illustration.webp" property="og:image"/><style>
+/* Article typography aligned with existing site articles; no outer card or glass panel */
+#article-detail > article {background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;max-width:none!important;}
+.bridge-article{max-width:none;margin:0;}
+.bridge-article p{margin:1rem 0;line-height:1.8;}
+.bridge-article h2{font-family:'Playfair Display',serif;font-size:clamp(1.55rem,2.7vw,2rem);font-weight:600;line-height:1.3;margin:2.7rem 0 1rem!important;color:#2C2A29;}
+.bridge-article h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:600;color:#2C2A29;margin:1.9rem 0 0.7rem;}
+.bridge-article ul{margin:0.8rem 0 1.4rem;}
+.bridge-article .bridge-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:1.5rem 0 0.3rem;}
+.bridge-article .bridge-photo{margin:1.5rem 0;}
+.bridge-article .bridge-photo-grid .bridge-photo{margin:0;}
+.bridge-article .bridge-photo img{width:100%;height:235px;object-fit:cover;display:block;border-radius:8px;}
+.bridge-article .bridge-photo-wide img{height:auto;max-height:460px;object-fit:contain;object-position:left center;background:#f7f5ef;}
+.bridge-article figcaption{font-size:.83rem;color:#706a60;line-height:1.5;margin-top:.5rem;}
+.bridge-photo-credit{font-size:.79rem!important;color:#81796f;line-height:1.5!important;margin:.3rem 0 1rem!important;}
+.bridge-archive-link a{color:#9A7B39;text-decoration:underline;text-underline-offset:3px;}
+.bridge-table-wrap{overflow-x:auto;max-width:100%;margin:1.4rem 0 1rem;}
+.bridge-table-wrap table{width:100%;min-width:580px;border-collapse:collapse;font-size:.94rem;}
+.bridge-table-wrap th{background:#f0e8d8;text-align:left;color:#2C2A29;font-weight:600;padding:12px 14px;}
+.bridge-table-wrap td{border-bottom:1px solid #e8dfd2;padding:12px 14px;vertical-align:top;line-height:1.55;}
+.bridge-article .bridge-timeline-note{font-size:.85rem;color:#81796f;}
+@media(max-width:640px){.bridge-article .bridge-photo-grid{grid-template-columns:1fr;}.bridge-article .bridge-photo img{height:auto;max-height:340px;object-fit:contain;}.bridge-table-wrap table{font-size:.84rem;}}
+</style></head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../../">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../" id="nav-home">
+<span data-i18n="nav_home">Home</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../services/" id="nav-services">
+<span data-i18n="nav_services">Services</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../" id="nav-articles">
+<span data-i18n="nav_articles">Articles</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../contact/" id="nav-contact">
+<span data-i18n="nav_contact">Contact</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../articles/TwoBridgesMargemSul" id="lang-pt">PT</a><a class="px-2.5 py-1 rounded-full transition-colors active-lang bg-gold text-white font-semibold" href="./" id="lang-en">EN</a><a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../ru/articles/TwoBridgesMargemSul/" id="lang-ru">RU</a></div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../">
+<span data-i18n="nav_home">Home</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../services/">
+<span data-i18n="nav_services">Services</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../">
+<span data-i18n="nav_articles">Articles</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../../contact/">
+<span data-i18n="nav_contact">Contact</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12">
+<!-- ================= PAGE 1: HOME / ABOUT ================= -->
+<!-- ================= PAGE 2: SERVICES ================= -->
+<!-- ================= PAGE 3: ARTICLES ================= -->
+<!-- ================= PAGE 4: CONTACT ================= -->
+<section class="page-section active" id="article-detail"><article class="w-full relative space-y-6"><span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">Infrastructure · Margem Sul · 1 November 2026</span><h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight">Two new bridges on Lisbon’s south bank: why have people waited decades, and when might they open?</h1><div class="w-16 h-0.5 bg-gold"></div><div class="text-charcoal-light text-base leading-relaxed space-y-4 font-light break-words bridge-article"><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Imagine two neighbouring cities separated by only a few hundred metres, yet driving from one to the other means a detour of roughly 16 kilometres.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">That is the situation between Seixal and Barreiro, on the south bank of the Tagus near Lisbon.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Portugal intends to address it with not one but two new bridges.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The first would connect Seixal and Barreiro. The second, much larger crossing would link Barreiro directly to Lisbon by road and rail.</p><figure class="my-8"><img alt="Illustrative image of a bridge" class="w-full max-h-[420px] object-cover rounded-2xl" loading="lazy" src="../../../assets/articles/TwoBridgesMargemSul/bridge-illustration.webp"/><figcaption class="text-xs mt-2 text-charcoal-light">Illustration, not an approved design or photograph of the planned crossing.</figcaption></figure><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The remarkable part is that these projects have been discussed for decades. And one of the bridges actually existed once.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">1. What exactly is planned?</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The projects are connected, but they serve different purposes.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Bridge 1: Seixal–Barreiro</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">This is a local road crossing over the River Coina.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Its principal purpose is to eliminate a long detour and improve road travel between two neighbouring municipalities.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In July 2025 the government included the bridge in the infrastructure programme associated with the third Tagus crossing. It appears as a road bridge in the official diagram. Possible future public transport improvements, including the Metro Sul do Tejo, are being considered separately.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Bridge 2: Lisboa–Barreiro</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">This is the well-known Terceira Travessia do Tejo, or TTT.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">It would connect the Chelas area of Lisbon to Barreiro and form part of the rail corridor between Lisbon and Madrid.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">It is intended to carry:</p><ul class="list-disc pl-6 space-y-2 text-charcoal-light text-base sm:text-lg font-light my-4"><li class="leading-relaxed">Cars.</li><li class="leading-relaxed">Conventional passenger trains.</li><li class="leading-relaxed">High-speed trains.</li></ul><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The government concept includes six road lanes and four railway tracks.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In this way, Barreiro could become an important transport hub connecting Lisbon, Seixal and other parts of Margem Sul.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">2. Did you know that a Seixal–Barreiro bridge once existed?</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The story begins in 1923.</p><div class="bridge-photo-grid"><figure class="bridge-photo"><a href="https://commons.wikimedia.org/wiki/File:Inauguracao_Ramal_Seixal_-_Ilustracao_Portuguesa_911_1923.jpg" rel="noopener noreferrer" target="_blank"><img alt="Opening of the Barreiro–Seixal railway, 29 July 1923. From Ilustração Portuguesa, no. 911." decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Inauguracao_Ramal_Seixal_-_Ilustracao_Portuguesa_911_1923.jpg"/></a><figcaption>Opening of the Barreiro–Seixal railway, 29 July 1923. From Ilustração Portuguesa, no. 911.</figcaption></figure><figure class="bridge-photo"><a href="https://commons.wikimedia.org/wiki/File:Inauguracao_Ramal_Seixal_2_-_Ilustracao_Portuguesa_911_1923.jpg" rel="noopener noreferrer" target="_blank"><img alt="Guests at the railway inauguration ceremony, 1923." decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Inauguracao_Ramal_Seixal_2_-_Ilustracao_Portuguesa_911_1923.jpg"/></a><figcaption>Guests at the railway inauguration ceremony, 1923.</figcaption></figure></div><p class="bridge-photo-credit">Photo source: Wikimedia Commons / Hemeroteca Municipal de Lisboa</p><p class="bridge-archive-link"><a href="https://arquivos.rtp.pt/conteudos/destruicao-da-ponte-ferroviaria-do-seixal/" rel="noopener noreferrer" target="_blank">View archive footage of the bridge destroyed in 1969 (RTP Arquivos)</a></p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">That year a railway bridge opened across the Coina between Seixal and Barreiro. It carried passengers and freight, offering residents a direct connection between the towns.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In September 1969 the bridge was seriously damaged in a collision with a vessel. Services stopped and the crossing was never rebuilt.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">That was 57 years ago.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Over the following decades, several ideas emerged: restore a pedestrian and cycling link, build a road bridge or extend the light-rail network.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">By 1999 a road crossing was included in plans for the future Estrada Regional 10. Construction, however, never began.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">After decades of discussion, the project is back on the agenda.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">3. When was the Lisboa–Barreiro bridge first proposed?</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The larger bridge has an equally interesting history.</p><figure class="bridge-photo bridge-photo-wide"><a href="https://commons.wikimedia.org/wiki/File:Gare_do_Barreiro_nos_finais_do_Seculo_XIX.jpg" rel="noopener noreferrer" target="_blank"><img alt="Barreiro railway station in the late 19th century. Historical photograph, not the Seixal–Barreiro bridge." decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gare_do_Barreiro_nos_finais_do_Seculo_XIX.jpg"/></a><figcaption>Barreiro railway station in the late 19th century. Historical photograph, not the Seixal–Barreiro bridge.</figcaption></figure><p class="bridge-photo-credit">Photo source: Wikimedia Commons, late-19th-century archival photograph</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">As early as 1991, specialists studied possible sites for new Tagus crossings.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The options included:</p><ul class="list-disc pl-6 space-y-2 text-charcoal-light text-base sm:text-lg font-light my-4"><li class="leading-relaxed">Sacavém–Montijo.</li><li class="leading-relaxed">Chelas–Barreiro.</li><li class="leading-relaxed">Algés–Trafaria.</li></ul><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Ultimately, the Vasco da Gama Bridge opened in 1998 while Chelas–Barreiro remained on paper.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The idea was not abandoned. In 1995, the state began legally reserving land for the future bridge, to ensure other development did not prevent it.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In 2000 the government again commissioned design work. In 2008 it formally confirmed Chelas–Barreiro as the alignment for a combined road and rail crossing.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In 2009 the bridge was close to entering the construction phase.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">On 30 March 2009 an international tender was announced for the Lisboa–Poceirão railway infrastructure, including the third crossing.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The expectation then was that work would begin in 2010 and high-speed Lisboa–Madrid service would start in 2013.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In November 2008 project representatives had also publicly identified 2013 as the bridge's completion date.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Those plans never materialised.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">4. Five reasons why the bridges have not been built</h2><h3 class="bridge-reason-title">Reason 1. The financial crisis</h3><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The global financial crisis began in 2008 and hit Portugal particularly hard.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Borrowing became more expensive, investors struggled to raise funding, and the state had to reconsider major infrastructure spending.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In September 2010 the government formally cancelled the tender for the Lisboa–Poceirão high-speed railway section, which included the future crossing.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The official decision cited the worsening economic situation and financing difficulties among its reasons.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In effect, a project once expected to finish in 2013 was halted before construction began.</p><h3 class="bridge-reason-title">Reason 2. Existing bridges and the Lusoponte contract</h3><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">This is where matters become more complicated.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Lusoponte operates the 25 de Abril and Vasco da Gama bridges.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Its concession agreement included exclusive rights to operate road crossings in a defined area of the Tagus.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Building a third road bridge therefore required the government to address its relationship with the concessionaire.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In 2009 government representatives explained that the tender for the road component depended on talks with Lusoponte.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">This does not mean the company can block any new bridge indefinitely. However, contractual commitments create additional legal and financial issues.</p><h3 class="bridge-reason-title">Reason 3. A bridge is only one part of a much bigger transport network</h3><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">A bridge alone will not solve every problem.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Imagine a modern six-lane bridge between Lisbon and Barreiro.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Where would all those cars go when they leave the bridge?</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">And how would the new tracks connect to existing railway lines?</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">For the crossing to work, approach roads, rail links and other transport infrastructure must also be built or upgraded.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">That is why the state is studying the project as a complete infrastructure system.</p><h3 class="bridge-reason-title">Reason 4. Complex engineering and environmental studies</h3><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">A major bridge across the Tagus estuary is an exceptionally complex engineering task.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Ground conditions and pier positions must be assessed, together with effects on shipping, nature and nearby communities.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Planners also need to estimate road and rail demand and establish whether the benefits justify the costs.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">These studies take time, and some procedures are required by Portuguese and European law.</p><h3 class="bridge-reason-title">Reason 5. Political decisions and changing priorities</h3><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Portugal has revisited the third-bridge proposal many times over recent decades.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Successive governments have reconsidered transport priorities, funding options and implementation dates.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">For example:</p><ul class="list-disc pl-6 space-y-2 text-charcoal-light text-base sm:text-lg font-light my-4"><li class="leading-relaxed">In 2008 the project received formal approval.</li><li class="leading-relaxed">In 2009 a tender was announced.</li><li class="leading-relaxed">In 2010 the tender was cancelled.</li><li class="leading-relaxed">In 2019 politicians again proposed delivering it by 2030.</li><li class="leading-relaxed">In 2022 the crossing appeared in long-term rail planning extending to 2050.</li><li class="leading-relaxed">In 2024 the government again commissioned studies.</li></ul><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The result is an unusual picture: a bridge project can outlast several governments, economic crises and even generations of residents.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In fairness, this is not just bureaucracy. Portugal faced real financial constraints, complex contracts and the challenge of coordinating a major rail programme.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">For residents of Seixal and Barreiro, though, the outcome is unchanged: there is still no direct road connection between the cities.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">5. What changed in 2024–2026?</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">This time the proposal became more closely tied to high-speed Lisboa–Madrid rail and the future Luís de Camões airport.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In May 2024 the government instructed Infraestruturas de Portugal to carry out the studies needed for the third crossing.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In July 2025 the authorities presented a plan including the Barreiro–Seixal road bridge within the wider infrastructure scheme.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">On 23 October 2026 Diário do Distrito reported that Infraestruturas de Portugal was already carrying out preliminary studies for the future Seixal–Barreiro crossing. The report was based on statements by the deputy mayor of Barreiro.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">This is important news, with one qualification: preliminary studies do not mean construction has begun. The report gave neither an approved construction start date nor an opening date.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Studies are also continuing for the larger Lisboa–Barreiro crossing. According to information published by Infraestruturas de Portugal, the environmental assessment documentation was expected to be submitted by the end of 2026.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">6. When might the bridges be built? All the known dates</h2><p>These are three distinct stages. Studies or announcements do not mean construction has started.</p><h3>Official timetable and forecasts</h3><div class="bridge-table-wrap"><table class="bridge-timeline"><thead><tr><th>When</th><th>What is planned</th><th>Status</th></tr></thead><tbody><tr><td>End of 2026</td><td>Submission of environmental studies for the Lisboa–Madrid railway, including TTT</td><td>IP plan</td></tr><tr><td>End of 2026</td><td>Preparation of a decision on the management model for the crossing</td><td>Government instruction</td></tr><tr><td>End of 2027</td><td>Completion of studies for the Lisboa–Évora line, including the third Tagus crossing</td><td>EU decision</td></tr><tr><td>End of 2028</td><td>End of the funded cycle of TTT and high-speed rail studies</td><td>Study programme</td></tr><tr><td>2030</td><td>Direct Lisboa–Madrid rail service of approximately five hours</td><td>EU target</td></tr><tr><td>2034</td><td>Full Lisboa–Madrid high-speed line, including the new crossing, around three hours</td><td>EU target</td></tr><tr><td>Seixal–Barreiro</td><td>No official construction start or opening date for the road bridge</td><td>Unconfirmed</td></tr></tbody></table></div><p class="bridge-timeline-note">Sources: EU Decision 2025/2198, Infraestruturas de Portugal and Sustentável 2030 programme.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">There is an important subtlety here.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The aim is to provide a roughly five-hour Lisboa–Madrid service in 2030, but that does not imply that the third bridge will already be open. The first stage is expected to rely on existing and upgraded infrastructure.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">By 2034, under the European timetable, the full high-speed line including the new Tagus crossing is intended to be in service.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Even these dates depend on studies, funding, permits and construction.</p><h3>When will construction start on Lisboa–Barreiro?</h3><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">There is still no formally approved construction start date.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In 2026 infrastructure minister Miguel Pinto Luz spoke of an estimated four-to-five-year construction period for the larger bridge, linking its completion to the new airport and high-speed railway.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Working backwards from a 2034 target and a four-to-five-year construction period suggests starting around 2029–2030.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">That is my inference from the announced timeframes, not an official construction start date.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">There is even less certainty about Seixal–Barreiro. Although included in the wider infrastructure concept, no public construction or opening schedule has been confirmed.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">7. How would everything connect?</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In a simple diagram, the connections would look like this:</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">This is a simplified illustration of connections between the cities, not an exact engineering alignment.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">For residents of Margem Sul, the effects could be substantial.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Someone living in Seixal, for example, could potentially reach Barreiro more quickly. The new Lisboa–Barreiro crossing would create an additional route into the capital.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Rail development could also improve connections between Lisbon, Setúbal, Alentejo and other regions. Infraestruturas de Portugal suggests the new railway corridor could reduce Lisboa–Setúbal journey times to about 30 minutes.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The precise routes, travel times, fares and dates still have to be confirmed.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">8. How could this affect property prices?</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">For property, projects of this scale are particularly interesting.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Today buyers consider not just size, condition and price, but also how long it takes to get to work, school or Lisbon.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">If accessibility improves, some districts may become more attractive.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Potential effects:</p><ul class="list-disc pl-6 space-y-2 text-charcoal-light text-base sm:text-lg font-light my-4"><li class="leading-relaxed">Seixal: easier connections to Barreiro and surrounding areas.</li><li class="leading-relaxed">Barreiro: potentially quicker journeys to Lisbon, a larger transport interchange and more interest from residents and businesses.</li><li class="leading-relaxed">Other parts of Margem Sul: changing traffic flows and shifts in the appeal of individual neighbourhoods.</li></ul><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">But it is important not to jump to conclusions.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Announcing a bridge does not automatically raise property prices.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The real effect depends on approach-road locations, transport interchange access, new rail stations and actual journey times.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">New infrastructure may also have negative effects for individual properties: noise, heavier road traffic and large junctions under construction.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">A property valuation should therefore take account not just of the future bridge but of where the surrounding infrastructure would actually go.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">9. Should we believe the bridges will finally be built?</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">In my view, Lisboa–Barreiro has stronger grounds for delivery now than at many points in the past.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The main reason is that its role goes far beyond travel between Lisbon's two banks.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The crossing is linked to Europe's high-speed rail network and the future international airport.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">There is also a European target year for the project: 2034.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Yet Portuguese infrastructure history teaches us a lesson: until construction tenders are launched, contracts signed and building works started, completion dates remain uncertain.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">That is especially true for Seixal–Barreiro, for which there is still no confirmed opening date.</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">Instead of a conclusion</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">Perhaps in a few years we will think of the Seixal–Barreiro drive as an ordinary five-to-ten-minute journey.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">And travelling from Barreiro to Lisbon may no longer mean a lengthy detour or taking the ferry.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">For now, however, the two new bridges mainly exist in documents, studies and plans.</p><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">The question remains: can Portugal finally turn decades of promises into real infrastructure?</p><h2 class="font-serif text-2xl sm:text-3xl text-charcoal mt-10 mb-4">Key documents and material</h2><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed my-4">1. The 2008 government decision on the Chelas–Barreiro alignment. 2. The 2010 official decision cancelling the tender. 3. The 2024 government decision restarting studies. 4. The EU's 2025/2198 decision, with a timetable to 2034. 5. Current IP environmental study status. 6. The 23 October 2026 report about preliminary studies on Seixal–Barreiro.</p><div class="border-t border-gold/20 pt-5 mt-10"><h3 class="font-serif text-xl text-charcoal font-semibold mt-6 mb-3">Documents and publications</h3><ul class="space-y-2 text-sm text-charcoal-light"><li><a class="text-gold-dark underline underline-offset-2 hover:text-charcoal" href="https://infraestruturasdeportugal.pt/pt-pt/rede-de-alta-velocidade" rel="noopener noreferrer" target="_blank">Infraestruturas de Portugal</a></li><li><a class="text-gold-dark underline underline-offset-2 hover:text-charcoal" href="https://portugal.gov.pt/pt/gc24/comunicacao/noticias/terceira-travessia-do-tejo-entre-chelas-e-barreiro" rel="noopener noreferrer" target="_blank">Governo de Portugal — TTT (2024)</a></li><li><a class="text-gold-dark underline underline-offset-2 hover:text-charcoal" href="https://www.cm-seixal.pt/noticia/seixal-e-barreiro-reivindicam-ponte-rodoviaria" rel="noopener noreferrer" target="_blank">Câmara Municipal do Seixal</a></li><li><a class="text-gold-dark underline underline-offset-2 hover:text-charcoal" href="https://arquivos.rtp.pt/conteudos/destruicao-da-ponte-ferroviaria-do-seixal/" rel="noopener noreferrer" target="_blank">RTP Arquivos — 1969</a></li><li><a class="text-gold-dark underline underline-offset-2 hover:text-charcoal" href="https://diariodistrito.sapo.pt/impacto-da-ponte-seixal-barreiro-na-reconfiguracao-regional/" rel="noopener noreferrer" target="_blank">Diário do Distrito — 23/10/2026</a></li><li><a class="text-gold-dark underline underline-offset-2 hover:text-charcoal" href="https://www.cp.pt/info/pt/cronologia" rel="noopener noreferrer" target="_blank">CP — cronologia</a></li><li><a class="text-gold-dark underline underline-offset-2 hover:text-charcoal" href="https://eur-lex.europa.eu/eli/dec_impl/2025/2198/oj" rel="noopener noreferrer" target="_blank">EUR-Lex, Decisão 2025/2198</a></li></ul></div></div><div class="pt-6 border-t border-gold/15"><a class="gold-outline-btn inline-block px-6 py-3 rounded-xl text-xs uppercase font-semibold" href="../">All articles</a></div></article></section></main>
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Real Estate &amp; Relocation Consultancy in Portugal</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../../">Home</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../../services/">Services</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../">Articles</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../../contact/">Contact</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">All rights reserved.</span>
+</div>
+</div>
+</footer>
+<script defer="True" src="../../../js/main.js"></script></body>
+</html>
