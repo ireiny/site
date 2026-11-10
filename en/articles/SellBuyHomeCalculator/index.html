@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sell your home and buy the next one. How much will you need? | Irina Abasheva</title>
+<!-- Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        'cream-card': '#FAF6F0',
+                        gold: {
+                            light: '#E6CA7E',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B39',
+                        },
+                        charcoal: {
+                            light: '#4A4846',
+                            DEFAULT: '#2C2A29',
+                            dark: '#1A1918'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-border {
+            border-color: #C5A059;
+        }
+        
+        .gold-btn {
+            background: linear-gradient(135deg, #C5A059 0%, #B38E46 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #B38E46 0%, #9A7B39 100%);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .gold-outline-btn {
+            border: 1px solid #C5A059;
+            color: #2C2A29;
+            transition: all 0.3s ease;
+        }
+
+        .gold-outline-btn:hover {
+            background-color: #C5A059;
+            color: #FFFFFF;
+        }
+
+        /* Glassmorphism Navigation Header */
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Subtle Smooth Transitions */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #C5A059;
+            font-weight: 600;
+        }
+
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6CA7E;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+<meta content="My Portugal real estate outlook for 2027: prices, mortgages, bubble risks and practical advice for buyers, sellers and investors." name="description"/><meta content="https://ireiny.github.io/site/assets/articles/PortugalMarket2027/lisbon-cover.webp" property="og:image"/><link href="https://abasheva.pt/en/articles/SellBuyHomeCalculator/" rel="canonical"/><link href="https://abasheva.pt/articles/SellBuyHomeCalculator/" hreflang="pt-PT" rel="alternate"/><link href="https://abasheva.pt/en/articles/SellBuyHomeCalculator/" hreflang="en" rel="alternate"/><link href="https://abasheva.pt/ru/articles/SellBuyHomeCalculator/" hreflang="ru" rel="alternate"/><meta content="Estimate the cash from your sale, purchase taxes and how much extra you may need." name="description"/><style>
+.calculator{display:grid;gap:1.5rem}.calc-panel{background:#FAF6F0;border:1px solid #C5A05945;border-radius:1.4rem;padding:clamp(18px,3vw,32px)}.calc-panel.white{background:#fffdfa}.calc-panel h2{font-family:Playfair Display,serif;font-size:clamp(22px,2.5vw,30px);margin:0 0 20px}.calc-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.calc-label{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600}.calc-input{width:100%;min-width:0;border:1px solid #C5A05975;background:#fff;border-radius:12px;padding:13px 15px;font:inherit;font-size:16px}.calc-check{display:flex;align-items:flex-start;gap:12px;margin:14px 0;font-size:15px}.calc-check input{accent-color:#C5A059;width:20px;height:20px;flex:none}.calc-summary{background:#fff;border:1px solid #C5A05955;border-radius:16px;padding:20px;margin-top:22px}.calc-summary strong{display:block;font-family:Playfair Display,serif;font-size:clamp(27px,4vw,42px);color:#9A7B39;line-height:1.25;margin:8px 0}.calc-muted{font-size:13px;color:#706a64;line-height:1.6}.calc-line{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px solid #C5A05922}.calc-line span:last-child{font-weight:600;white-space:nowrap}.calc-tax{border-left:3px solid #C5A059;padding:12px 16px;background:#fff;margin-top:16px;border-radius:0 10px 10px 0}.calc-tax h3{font:600 19px Playfair Display,serif;margin:0 0 8px}.calc-tax p{margin:8px 0}.calc-action{display:flex;flex-wrap:wrap;gap:12px}.calc-action a{display:inline-block;border-radius:999px;padding:12px 22px;font-size:13px;text-align:center;font-weight:600;background:#C5A059;color:#fff}.calc-action a:last-child{background:transparent;border:1px solid #C5A059;color:#2C2A29}.calc-hidden{display:none}.calc-panel p{margin:10px 0}.calc-error{color:#9b2e25;font-size:13px;margin-top:10px}.calc-status{margin-bottom:12px;color:#9A7B39;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase}@media(max-width:620px){.calc-fields{grid-template-columns:1fr}.calc-panel{padding:18px}.calc-line{font-size:13px}}
+</style><style>
+.tax-accordion{display:flex;gap:14px;align-items:center;width:100%;text-align:left;background:#FAF6F0;border:1px solid rgba(197,160,89,.5);border-radius:14px;padding:18px;color:#2C2A29;cursor:pointer;transition:background .2s}
+.tax-accordion:hover{background:#f5eddf}.tax-accordion:focus-visible{outline:3px solid #C5A059;outline-offset:2px}.tax-toggle-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 32px;width:32px;height:32px;border-radius:50%;background:#C5A059;color:white;font-size:24px;line-height:1}.tax-accordion strong{display:block;font-size:15px}.tax-accordion small{display:block;color:#67615b;font-size:12px;margin-top:4px}.tax-details{padding:20px 4px 4px;display:grid;gap:18px}.tax-details .calc-label small{display:block;font-size:12px;line-height:1.45;color:#6e6860;margin-top:7px}.tax-details .calc-check{margin-top:2px}.tax-details .calc-summary{margin-top:4px}.tax-details .calc-summary h3{font-weight:700;margin-bottom:12px}.tax-details .calc-muted{line-height:1.6}.calc-hidden{display:none!important}@media(max-width:640px){.tax-accordion{padding:14px}.tax-details{padding:15px 0 0}.tax-accordion strong{font-size:14px}}</style><style>.calc-purpose{border:1px solid rgba(197,160,89,.4);border-radius:14px;padding:16px;margin:15px 0;background:rgba(253,251,247,.7)}.calc-purpose legend{font-weight:650;font-size:1rem;padding:0 6px;color:#2C2A29}.calc-purpose .calc-check{display:flex;align-items:center;gap:9px;margin:10px 0;cursor:pointer}.calc-purpose input[type=radio]{accent-color:#C5A059;width:17px;height:17px;flex-shrink:0}.calc-purpose .purpose-help{margin-top:8px}</style></head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-gold selection:text-white">
+<header class="sticky top-0 z-50 glass-nav border-b border-gold/15 transition-all duration-300">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="group flex flex-col" href="../../">
+<span class="font-serif text-xl sm:text-2xl tracking-wider font-semibold text-charcoal group-hover:text-gold transition-colors">
+                    IRINA ABASHEVA
+                </span>
+<span class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-charcoal-light font-light">
+                    Real Estate • Portugal
+                </span>
+</a>
+<!-- Desktop Navigation Tabs -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../" id="nav-home">
+<span data-i18n="nav_home">Home</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../services/" id="nav-services">
+<span data-i18n="nav_services">Services</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1 active" href="../" id="nav-articles">
+<span data-i18n="nav_articles">Articles</span>
+</a>
+<a class="nav-link text-sm font-medium tracking-wide uppercase text-charcoal py-1" href="../../contact/" id="nav-contact">
+<span data-i18n="nav_contact">Contact</span>
+</a>
+</nav>
+<!-- Language Switcher & Mobile Menu Button -->
+<div class="flex items-center space-x-4">
+<!-- Language Switcher -->
+<div class="inline-flex rounded-full border border-gold/30 p-1 bg-cream-card/80 text-xs font-medium">
+<a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../articles/SellBuyHomeCalculator" id="lang-pt">PT</a><a class="px-2.5 py-1 rounded-full transition-colors active-lang bg-gold text-white font-semibold" href="./" id="lang-en">EN</a><a class="px-2.5 py-1 rounded-full transition-colors text-charcoal hover:text-gold" href="../../../ru/articles/SellBuyHomeCalculator/" id="lang-ru">RU</a></div>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation" class="md:hidden text-charcoal p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-card border-b border-gold/20 px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../">
+<span data-i18n="nav_home">Home</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../../services/">
+<span data-i18n="nav_services">Services</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal border-b border-gold/10" href="../">
+<span data-i18n="nav_articles">Articles</span>
+</a>
+<a class="block w-full text-left py-2 font-serif text-lg text-charcoal" href="../../contact/">
+<span data-i18n="nav_contact">Contact</span>
+</a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12"><section class="page-section active" id="article-detail"><article class="bg-cream rounded-3xl w-full p-5 sm:p-10 border border-gold/30 relative space-y-5 shadow-lg" style="min-width:0;overflow-wrap:break-word"><span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">Guide and calculator</span><h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight">Sell your home and buy the next one. How much will you need?</h1><div class="w-16 h-0.5 bg-gold"></div><p class="text-charcoal-light text-base sm:text-lg font-light leading-relaxed">Planning to move but unsure whether the sale of your current home will cover the next one? This calculator gives you a first estimate, including agency fees and the main taxes on your new purchase.</p><div class="calculator">
+<section class="calc-panel"><h2>1. Selling your current home</h2><div class="calc-fields"><label class="calc-label">Expected sale price<input class="calc-input" id="c-sale" min="0" step="1000" type="number" value="320000"/></label><label class="calc-label">Outstanding mortgage balance<input class="calc-input" id="c-debt" min="0" step="1000" type="number" value="65000"/></label></div><div class="calc-line"><span>Agency commission (5% + VAT)</span><span id="c-fee"></span></div><div class="calc-summary"><div class="calc-status">Cash left after the sale</div><strong id="c-net"></strong><p class="calc-muted">After repaying the mortgage and agent fee, before possible capital gains tax.</p><p class="calc-error calc-hidden" id="c-warning">The loan balance and fee exceed the sale price.</p></div></section>
+<section class="calc-panel white"><h2>2. What about tax on the sale?</h2><label class="calc-check"><input checked="" id="c-resident" type="checkbox"/> <span>I am a tax resident of Portugal</span></label><label class="calc-check"><input checked="" id="c-hpp" type="checkbox"/> <span>This is my primary permanent residence (HPP)</span></label><div class="calc-tax" id="c-good"><h3>Capital gains tax relief may be available</h3><p>If you sell your primary permanent home and buy another to live in, you may qualify for full or partial capital gains tax relief, provided all legal requirements are met.</p><p>The amount reinvested matters. Even if you spend all the cash left after the sale, part of the gain may still be taxable.</p></div><div class="calc-tax calc-hidden" id="c-bad"><h3>Capital gains tax may apply</h3><p>The tax depends on the buying and selling prices, documented expenses and your tax circumstances. Agency fees and certain documented improvements made within the previous 12 years may reduce the taxable gain.</p></div><p class="calc-muted">You can estimate capital gains tax in the optional section below. A precise figure requires an individual review.</p><div class="calc-tax-expand"><button aria-controls="c-tax-details" aria-expanded="false" class="tax-accordion" id="c-tax-toggle" type="button"><span aria-hidden="true" class="tax-toggle-icon">+</span><span><strong>Estimate capital gains tax (mais-valias)</strong><small>Extra questions, only if you need them</small></span></button><div class="tax-details calc-hidden" id="c-tax-details"><p class="calc-muted">This optional estimate helps you understand a possible tax bill. It does not replace an individual tax assessment.</p><div class="calc-fields">
+<label class="calc-label">How much did you originally pay? (€)<input class="calc-input" id="c-purchase" min="0" step="1000" type="number" value="140000"/></label>
+<label class="calc-label">Year purchased (not year built)<input class="calc-input" id="c-year" max="2026" min="1900" step="1" type="number" value="2018"/></label>
+<label class="calc-label">Documented qualifying improvements in the past 12 years (€)<input class="calc-input" id="c-improve" min="0" step="100" type="number" value="12000"/><small>Documented improvements that add value. Not every renovation qualifies.</small></label>
+<label class="calc-label">Expenses when you originally bought (€)<input class="calc-input" id="c-acquisition-costs" min="0" step="100" type="number" value="6500"/><small>IMT, stamp duty, deed, registration and other documented costs. Include any agency fee you paid when buying only if it is tax-deductible.</small></label><label class="calc-label">Other expenses when selling (€)<input class="calc-input" id="c-sale-costs" min="0" step="100" type="number" value="0"/><small>Documented selling costs. Do not add the current agency commission again; it is already calculated automatically.</small></label>
+<label class="calc-label">Annual taxable income (€)<input class="calc-input" id="c-income" min="0" step="500" type="number" value="45000"/><small>Income relevant to determining the IRS rate, including foreign income for non-residents. Not gross salary.</small></label>
+</div><label class="calc-label">Outstanding loan amount used to buy this property (€)<input class="calc-input" id="c-eligible-debt" min="0" step="1000" type="number" value="65000"/><small>Enter 0 if the loan was for another purpose, or only the part used to buy this property.</small></label>
+<div class="calc-tax calc-hidden" id="c-tax-unavailable"><p id="c-tax-unavailable-text">This situation needs a personal assessment. We will not display a potentially misleading tax figure.</p></div>
+<div class="calc-summary" id="c-tax-output"><h3>Estimated capital gains tax</h3><div class="calc-line"><span>Gain after eligible costs</span><span id="c-gain"></span></div><div class="calc-line"><span>Gain amount included in the IRS calculation</span><span id="c-taxable"></span></div><div class="calc-status" style="margin-top:15px">Possible additional IRS</div><strong id="c-tax"></strong><p class="calc-muted">Estimate based on 2026 mainland IRS brackets for one owner filing individually, excluding most deductions and special regimes. Higher incomes may incur a solidarity surcharge.</p><p class="calc-muted" id="c-tax-reinvest-msg"></p><p class="calc-muted">With multiple owners or a joint tax return, the actual tax may differ and needs individual review.</p></div><p class="calc-muted">This is only an estimate. Documents, dates, residence conditions, inflation adjustments and other factors can change the actual result.</p></div></div></section>
+<section class="calc-panel"><h2>3. Buying your next home</h2><label class="calc-label">Price of your next home<input class="calc-input" id="c-next" min="0" step="1000" type="number" value="400000"/></label><fieldset class="calc-purpose"><legend>How will you use the new property?</legend><label class="calc-check"><input checked="" name="c-purpose" type="radio" value="hpp"/><span>As my main permanent home (HPP)</span></label><label class="calc-check"><input name="c-purpose" type="radio" value="secondary"/><span>As a second home or rental property</span></label><p class="calc-muted purpose-help">The intended use changes the property transfer tax (IMT) and may affect capital-gains reinvestment relief.</p><p class="calc-muted calc-hidden" id="c-purpose-warning">If the new property will not be your main permanent home, the usual capital-gains reinvestment relief on the sale of your previous main home will generally not apply.</p><p class="calc-muted calc-hidden" id="c-nonresident-warning">A 7.5% IMT rate may apply to non-tax-residents regardless of intended use. Legal exceptions exist, including where you become tax resident within the statutory period.</p></fieldset><div class="calc-summary"><h3 class="font-serif text-xl">Costs of the new purchase</h3><div class="calc-line"><span>Property price</span><span id="c-price"></span></div><div class="calc-line"><span>IMT (property transfer tax)</span><span id="c-imt"></span></div><div class="calc-line"><span>Stamp Duty (0.8%)</span><span id="c-stamp"></span></div><label class="calc-label" style="margin-top:14px">Deed and registration (editable estimate)<input class="calc-input" id="c-legal" min="0" step="50" type="number" value="700"/></label><div class="calc-line"><span>Deed and registration (editable estimate)</span><span id="c-legal-value"></span></div><div class="calc-status" style="margin-top:20px">Total purchase cost</div><strong id="c-total"></strong></div></section>
+<section class="calc-panel white"><h2>4. Your result</h2><div class="calc-line"><span>Available from the sale</span><span id="c-available"></span></div><div class="calc-line"><span>Total purchase cost</span><span id="c-total-again"></span></div><div class="calc-line calc-hidden" id="c-tax-row"><span>Possible capital gains tax (estimate)</span><span id="c-tax-result"></span></div><div class="calc-summary"><div class="calc-status" id="c-need-label">Additional funds needed</div><div class="calc-status calc-hidden" id="c-remain-label">Cash left after the purchase</div><strong id="c-result"></strong><p class="calc-muted" data-base=" IMT estimated using mainland Portugal’s 2026 tables for the selected purpose. For non-residents, 7.5% is assumed, subject to statutory exceptions. Assumes taxable property value (VPT) does not exceed price; personal reliefs excluded." id="c-result-note">IMT estimated using mainland Portugal’s 2026 tables for the selected purpose. For non-residents, 7.5% is assumed, subject to statutory exceptions. Assumes taxable property value (VPT) does not exceed price; personal reliefs excluded.</p></div><p class="calc-muted">IMT estimated using mainland Portugal’s 2026 tables for the selected purpose. For non-residents, 7.5% is assumed, subject to statutory exceptions. Assumes taxable property value (VPT) does not exceed price; personal reliefs excluded.</p></section>
+<section class="calc-panel"><h2>How can you organise both transactions smoothly?</h2><p>The numbers help you plan your budget, but documents and timing matter too. I can help assess your current property and plan your move step by step.</p><div class="calc-action"><a href="../../contact/">Request a personal assessment</a><a href="https://wa.me/351911527581" rel="noopener noreferrer" target="_blank">Message me on WhatsApp</a></div></section>
+</div></article></section></main>
+<footer class="bg-cream-card border-t border-gold/15 py-12 mt-16">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="text-center md:text-left">
+<div class="font-serif text-lg font-semibold tracking-wider text-charcoal">IRINA ABASHEVA</div>
+<div class="text-xs text-charcoal-light font-light mt-1" data-i18n="footer_subtitle">Real Estate &amp; Relocation Consultancy in Portugal</div>
+</div>
+<div class="flex space-x-6 text-sm text-charcoal">
+<a class="hover:text-gold transition-colors" data-i18n="nav_home" href="../../">Home</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_services" href="../../services/">Services</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_articles" href="../">Articles</a>
+<a class="hover:text-gold transition-colors" data-i18n="nav_contact" href="../../contact/">Contact</a>
+</div>
+<div class="text-xs text-charcoal-light font-light text-center md:text-right">
+                © <span id="year-span"></span> Irina Abasheva. <span data-i18n="footer_rights">All rights reserved.</span>
+</div>
+</div>
+</footer>
+<script defer="True" src="../../../js/main.js"></script><script defer="True" src="../../../assets/calculator/calculator.js"></script></body>
+</html>
