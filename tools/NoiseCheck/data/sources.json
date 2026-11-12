@@ -1,0 +1,54 @@
+{
+  "retrieved": "2026-11-12",
+  "lisboa": {
+    "catalogue": "https://dados.cm-lisboa.pt/dataset/mapa-do-ruido",
+    "archive": "https://dados.cm-lisboa.pt/dataset/78c049d4-be97-474a-9c28-ef34ed500c25/resource/14e10f2a-43d7-4775-aca4-2f01a5ac76a0/download/ruidoglobal2020.7z",
+    "catalogue_year": 2020,
+    "license": "Creative Commons Attribution, as labelled in the municipal catalogue",
+    "newer_map": 2022
+  },
+  "seixal": {
+    "service": "https://sig.cm-seixal.pt/arcgis/rest/services/SERV_GEST_TERRITORIO_INTER/MapServer",
+    "layers": {
+      "lden": 585,
+      "ln": 586
+    },
+    "report_reference_year": 2018,
+    "report_revision": 2022,
+    "service_reference_year": "not stated in layer metadata",
+    "license": "not stated in service metadata"
+  },
+  "geometry": {
+    "crs": "EPSG:4326",
+    "simplification_degrees": 6e-06,
+    "coordinate_precision": 6
+  },
+  "classification": "Editorial night-noise bands: upper edge <=45, <=55, <=65, >65 dB(A). Not legal compliance or individual health risk.",
+  "comparison": "Proportion of mapped polygon area in lower / same Ln classes; no population weighting and no cross-city average.",
+  "coverage": {
+    "automatic": [
+      "lisboa",
+      "seixal"
+    ],
+    "official_historical_maps_only": [
+      "montijo",
+      "setubal",
+      "alcochete"
+    ]
+  },
+  "montijo": {
+    "report_date": "2010-09-30",
+    "scale": "1:25000",
+    "automatic_lookup": false
+  },
+  "setubal": {
+    "reference_year": 2018,
+    "report_date": "2020-01",
+    "automatic_lookup": false
+  },
+  "alcochete": {
+    "report_date": "2020-08",
+    "road_data_year": 2019,
+    "automatic_lookup": false
+  }
+}

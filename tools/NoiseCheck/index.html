@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ruído perto de casa | Irina Abasheva</title>
+  <meta name="description" content="Consulte as zonas de ruído exterior em Lisboa e no Seixal e saiba o que verificar antes de escolher uma casa.">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/leaflet.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="../../">IRINA ABASHEVA<small>REAL ESTATE · PORTUGAL</small></a><a id="tools-link" class="tools-nav" href="../" data-t="toolsMenu"></a><nav aria-label="Language"><button data-lang="pt">PT</button><button data-lang="en">EN</button><button data-lang="ru">RU</button></nav></header>
+  <main>
+    <section class="intro"><p class="eyebrow" data-t="eyebrow"></p><h1 data-t="title"></h1><p class="lead" data-t="intro"></p></section>
+    <div id="local-warning" class="notice" hidden role="alert"></div>
+    <section class="workspace">
+      <div class="search-panel">
+        <form id="search-form">
+          <label for="city" data-t="city"></label><select id="city"><option value="lisboa">Lisboa</option><option value="seixal">Seixal</option><option value="montijo">Montijo</option><option value="setubal">Setúbal</option><option value="alcochete">Alcochete</option></select>
+          <div id="source-status" class="notice"></div>
+          <label id="address-label" for="address" data-t="address"></label><div class="search-line"><input id="address" name="address" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="matches" aria-expanded="false" aria-describedby="address-hint" required maxlength="180"><button class="primary" id="search" type="submit" data-t="search"></button></div>
+          <p id="address-hint" class="hint" data-t="addressHint"></p>
+        </form>
+        <div id="matches" class="matches" role="listbox" aria-labelledby="address-label"></div>
+        <p id="status" role="status" aria-live="polite"></p>
+        <div class="map-top"><span data-t="mapHint"></span><div class="metric-switch"><button data-metric="lden" aria-pressed="false">Lden</button><button data-metric="ln" aria-pressed="true">Ln</button></div></div>
+        <div id="map" role="region" aria-label="Map"></div>
+        <p class="legend"><span style="--c:#72a18a">≤45</span><span style="--c:#b5b574">45–55</span><span style="--c:#d89d61">55–65</span><span style="--c:#b66b63">&gt;65 dB(A)</span></p>
+        <p class="hint" data-t="legendHint"></p>
+      </div>
+      <aside id="result" class="result" aria-live="polite"><div class="empty"><span class="sound-icon">◌</span><h2 data-t="emptyTitle"></h2><p data-t="emptyText"></p></div></aside>
+    </section>
+    <section class="explain"><article><span class="step">01</span><h2 data-t="meaningTitle"></h2><p data-t="meaning"></p></article><article><span class="step">02</span><h2 data-t="healthTitle"></h2><p data-t="health"></p><a href="https://www.who.int/europe/publications/i/item/9789289053563" target="_blank" rel="noopener" data-t="who"></a></article><article><span class="step">03</span><h2 data-t="limitsTitle"></h2><p data-t="limits"></p></article></section>
+    <details class="sources"><summary data-t="sourcesTitle"></summary><div id="sources-content"></div></details>
+    <section class="contact"><div><h2 data-t="contactTitle"></h2><p data-t="contactText"></p></div><a class="primary" id="contact-link" href="../../contact/" data-t="contact"></a></section>
+  </main>
+  <footer><span>© Irina Abasheva</span><p data-t="privacy"></p><a id="back" href="../../articles/" data-t="back"></a></footer>
+</body>
+</html>
