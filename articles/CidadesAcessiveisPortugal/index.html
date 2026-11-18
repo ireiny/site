@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cinco cidades acessíveis em Portugal | Irina Abasheva</title>
+<meta name="description" content="Preços da habitação, população, empregadores e opções de compra em Vila Real, Guarda, Bragança, Portalegre e Castelo Branco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap">
+<style>*{box-sizing:border-box}
+:root{--cream:#FDFBF7;--card:#FAF6F0;--gold:#C5A059;--gold-dark:#795c29;--ink:#2C2A29;--line:#e8dcc5;--ref-color:#685538;--teal:#45736d}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.75 Inter,Arial,sans-serif}
+a{color:var(--gold-dark);text-underline-offset:.2em}
+.site-header{position:sticky;top:0;z-index:2;background:var(--cream);border-bottom:1px solid var(--line)}
+.site-bar,main,footer{max-width:1280px;margin:auto;padding-inline:clamp(14px,4vw,48px)}
+.site-bar{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:14px}
+.brand{font:600 clamp(17px,2.2vw,24px)/1.3 "Playfair Display",Georgia,serif;letter-spacing:.06em;text-decoration:none;color:var(--ink)}
+.brand small{display:block;font:11px/1.5 Inter,Arial,sans-serif;letter-spacing:.12em}
+.site-bar nav{display:flex;gap:clamp(12px,3vw,32px);font-size:13px}
+main{padding-block:clamp(18px,4vw,48px)}
+article{border:1px solid var(--line);border-radius:26px;padding:clamp(15px,4vw,44px);box-shadow:0 12px 35px #3122070c;overflow-wrap:break-word}
+article>header{padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid var(--line)}
+.tag{font-size:11px;letter-spacing:.12em;color:var(--gold-dark)}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.2}
+h1{font-size:clamp(31px,5vw,52px);margin:12px 0}
+h2{font-size:clamp(24px,3.7vw,36px);margin:48px 0 16px}
+h3{font-size:clamp(20px,2.6vw,26px);margin:24px 0 12px}
+.lead{font:clamp(18px,2.4vw,23px)/1.45 "Playfair Display",Georgia,serif;color:var(--gold-dark)}
+p{margin:0 0 18px}
+article>header p:last-child{margin:0;font-size:13px;color:#615951}
+.chart{--label-width:clamp(78px,17vw,148px);--value-width:clamp(78px,15vw,126px);--chart-gap:8px;background:var(--card);border:1px solid var(--line);border-radius:16px;margin:22px 0;padding:clamp(10px,2.8vw,24px)}
+.chart h3:first-child{margin-top:0}
+.chart-row{display:grid;grid-template-columns:var(--label-width) minmax(0,1fr) var(--value-width);gap:var(--chart-gap);align-items:center;min-height:34px;font-size:clamp(11px,1.9vw,14px)}
+.chart-row strong{white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.plot{position:relative}
+.track{height:12px;border-radius:3px;background:#eee6d8}
+.track i{display:block;height:100%;width:var(--width);border-radius:3px;background:#b48e4c}
+.national .track i{background:var(--teal)}
+.national strong{color:#315953}
+.reference{position:absolute;left:calc(var(--label-width) + var(--chart-gap));right:calc(var(--value-width) + var(--chart-gap));inset-block:0;pointer-events:none}
+.reference:after{content:"";position:absolute;left:var(--ref);inset-block:0;border-left:2px dashed var(--ref-color)}
+.ref-label{font-size:13px;display:flex;gap:8px;align-items:center;margin-bottom:7px;color:var(--ref-color)}
+.ref-label span{width:22px;border-top:2px dashed var(--ref-color)}
+.totals{display:flex;justify-content:space-between;gap:6px 15px;flex-wrap:wrap;align-items:baseline}
+.totals span{font-size:13px}
+.agebar{display:flex;border-radius:6px;overflow:hidden;height:18px;margin:12px 0}
+.age0{background:#dec292}.age1{background:#45736d}.age2{background:#9f715c}
+.agelegend{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.agelegend li{font-size:13px}
+.agelegend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.agelegend strong{display:block;font-size:14px}
+figcaption{margin-top:12px;font-size:12px;line-height:1.5;color:#615951}
+.scroll{overflow-x:auto;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+td,th{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f0e7d7}
+footer{padding-bottom:28px;color:#615951;font-size:13px}
+@media(max-width:550px){.site-bar nav a:not(:first-child){display:none}.agelegend{grid-template-columns:1fr}.agelegend strong{display:inline;margin-left:6px}table{min-width:460px}}
+
+.chart-image{display:block;width:100%;height:auto}
+.chart-mobile{display:none}
+.site-bar .language-switch{display:flex;gap:8px}
+.language-switch a[aria-current]{font-weight:700}
+@media(max-width:650px){.chart-image{display:none}.chart-mobile{display:block}}
+@media(max-width:550px){.site-bar{flex-wrap:wrap;gap:8px}.site-bar .language-switch a{display:inline}}
+</style>
+<link rel="canonical" href="https://abasheva.pt/articles/CidadesAcessiveisPortugal/"><link rel="alternate" hreflang="pt" href="https://abasheva.pt/articles/CidadesAcessiveisPortugal/"><link rel="alternate" hreflang="en" href="https://abasheva.pt/en/articles/CidadesAcessiveisPortugal/"><link rel="alternate" hreflang="ru" href="https://abasheva.pt/ru/articles/CidadesAcessiveisPortugal/"></head>
+<body>
+<header class="site-header"><div class="site-bar">
+<a class="brand" href="/">IRINA ABASHEVA<small>REAL ESTATE · PORTUGAL</small></a>
+<nav aria-label="Navegação do site"><a href="/articles/">Artigos</a><a href="/services/">Serviços</a><a href="/contact/">Contactos</a></nav>
+<nav class="language-switch" aria-label="Idioma do artigo"><a href="/articles/CidadesAcessiveisPortugal/" hreflang="pt" lang="pt" aria-current="page">PT</a><a href="/en/articles/CidadesAcessiveisPortugal/" hreflang="en" lang="en">EN</a><a href="/ru/articles/CidadesAcessiveisPortugal/" hreflang="ru" lang="ru">RU</a></nav></div></header>
+<main><article>
+<header>
+<div class="tag">IMOBILIÁRIO EM PORTUGAL · NOVEMBRO DE 2026</div>
+<h1>Cinco cidades acessíveis em Portugal</h1>
+<p class="lead">Preços da habitação, população, empregadores e opções de compra em Vila Real, Guarda, Bragança, Portalegre e Castelo Branco.</p>
+<p>Irina Abasheva · atualizado a 18 de novembro de 2026</p>
+</header>
+<p>Fora de Lisboa e do Porto, o orçamento necessário para comprar casa muda bastante. Um imóvel acessível tem de servir para viver ou ter um perfil de arrendatário bem definido. Vejamos o que está por detrás dos preços mais baixos em cinco cidades do interior de Portugal.</p>
+<p>Na comparação do Idealista de outubro de 2026, estas eram as cinco capitais de distrito ou de região autónoma mais acessíveis. Vilas e aldeias fora da comparação podem ser mais baratas.</p>
+<h2>Quanto custa a habitação?</h2>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/precos-pt.png" alt="Vila Real: 1 551 €/m². Guarda: 1 153 €/m². Bragança: 1 147 €/m². Portalegre: 1 128 €/m². Castelo Branco: 1 119 €/m². Portugal · 3 249 €/m²" loading="lazy" decoding="async"><div class="chart-mobile"><div class="ref-label"><span></span>Portugal · 3 249 €/m²</div>
+<div class="plot">
+<div class="chart-row"><span>Vila Real</span>
+<div class="track"><i style="--width:44.31428571428571%"></i></div><strong>1 551 €/m²</strong></div>
+<div class="chart-row"><span>Guarda</span>
+<div class="track"><i style="--width:32.94285714285714%"></i></div><strong>1 153 €/m²</strong></div>
+<div class="chart-row"><span>Bragança</span>
+<div class="track"><i style="--width:32.77142857142857%"></i></div><strong>1 147 €/m²</strong></div>
+<div class="chart-row"><span>Portalegre</span>
+<div class="track"><i style="--width:32.22857142857143%"></i></div><strong>1 128 €/m²</strong></div>
+<div class="chart-row"><span>Castelo Branco</span>
+<div class="track"><i style="--width:31.97142857142857%"></i></div><strong>1 119 €/m²</strong></div>
+<div class="reference" style="--ref:92.82857142857142%"></div></div></div><figcaption>Preços medianos anunciados · outubro de 2026 · Idealista</figcaption></figure>
+<p>A mediana é o ponto central da amostra: metade dos valores fica abaixo e metade acima. Serve de referência para comparar cidades. Um apartamento novo com estacionamento pode custar bastante mais.</p>
+<h2>A população está a crescer e a idade importa</h2>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/crescimento-populacao-pt.png" alt="Vila Real: 6,3%. Guarda: 2,0%. Bragança: 8,6%. Portalegre: 4,0%. Castelo Branco: 7,5%. Portugal · +7,8%" loading="lazy" decoding="async"><div class="chart-mobile"><div class="ref-label"><span></span>Portugal · +7,8%</div>
+<div class="plot">
+<div class="chart-row"><span>Vila Real</span>
+<div class="track"><i style="--width:63.0%"></i></div><strong>6,3%</strong></div>
+<div class="chart-row"><span>Guarda</span>
+<div class="track"><i style="--width:20.0%"></i></div><strong>2,0%</strong></div>
+<div class="chart-row"><span>Bragança</span>
+<div class="track"><i style="--width:86.0%"></i></div><strong>8,6%</strong></div>
+<div class="chart-row"><span>Portalegre</span>
+<div class="track"><i style="--width:40.0%"></i></div><strong>4,0%</strong></div>
+<div class="chart-row"><span>Castelo Branco</span>
+<div class="track"><i style="--width:75.0%"></i></div><strong>7,5%</strong></div>
+<div class="reference" style="--ref:78.0%"></div></div></div><figcaption>Variação da população municipal, 2021–2025 · Pordata / INE</figcaption></figure>
+<p>A população aumentou nos cinco municípios. O número de óbitos superou o de nascimentos e o crescimento foi assegurado pelo saldo migratório. Bragança foi o único dos cinco municípios a crescer mais depressa do que o país.</p>
+<section>
+<h2>5. Vila Real</h2>
+<h3>Uma cidade universitária perto do Douro</h3>
+<p>Vila Real situa-se no interior do norte de Portugal.</p>
+<p><b>Compras.</b> Nosso Shopping e supermercado Continente.<br><b>Transportes.</b> A central de camionagem tem ligações ao Porto e a Lisboa. De carro, a A4 é uma opção prática para chegar ao Porto. A cidade não tem serviço ferroviário de passageiros.<br><b>Clima.</b> A temperatura média é de +6,3 °C em janeiro e de +21,8 °C em julho. A média das máximas diárias em julho é de +28,8 °C (IPMA, 1991–2020).</p>
+<p><b>Ensino:</b> Universidade de Trás-os-Montes e Alto Douro — UTAD.<br><b>Saúde:</b> Hospital de São Pedro, ULS de Trás-os-Montes e Alto Douro.</p>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/vila-real-populacao-pt.png" alt="52 964 residentes. Homens 25 297 · mulheres 27 667. 0–14 anos: 6 269 pessoas · 11,8%. 15–64 anos: 33 562 pessoas · 63,4%. 65 ou mais anos: 13 133 pessoas · 24,8%" loading="lazy" decoding="async"><div class="chart-mobile"><div class="totals"><strong>52 964 residentes</strong><span>Homens 25 297 · mulheres 27 667</span></div>
+<div class="agebar" aria-hidden="true"><span class="age0" style="flex:6269"></span><span class="age1" style="flex:33562"></span><span class="age2" style="flex:13133"></span></div>
+<ul class="agelegend"><li><i class="age0"></i> 0–14 anos<strong>6 269 pessoas · 11,8%</strong></li><li><i class="age1"></i> 15–64 anos<strong>33 562 pessoas · 63,4%</strong></li><li><i class="age2"></i> 65 ou mais anos<strong>13 133 pessoas · 24,8%</strong></li></ul></div><figcaption>Vila Real: população e indicadores demográficos • Pordata / INE • 2025</figcaption></figure>
+<p>Dos cinco municípios, Vila Real é o que mais se aproxima do rácio nacional: 2,56 residentes dos 15 aos 64 anos por cada residente com 65 ou mais anos, face a 2,76 no país. Os dados abrangem todo o município.</p>
+<h3>Principais empregadores</h3>
+<div class="scroll">
+<table><tr><th>Principais empregadores</th><th>Setor de atividade</th><th>Áreas de trabalho</th></tr><tr><td>AUMOVIO Advanced Antenna, anteriormente Continental Advanced Antenna</td><td>Antenas automóveis e sistemas eletrónicos</td><td>Operadores, engenheiros de eletrónica e produção, especialistas em qualidade, manutenção de equipamentos e dados</td></tr><tr><td>UTAD</td><td>Ensino e investigação</td><td>Docentes, investigadores, técnicos de laboratório, informática e administração</td></tr><tr><td>Hospital de São Pedro / ULS</td><td>Saúde</td><td>Médicos, enfermeiros, técnicos de diagnóstico, pessoal de apoio e administrativo</td></tr></table></div>
+<p>As funções da tabela ilustram os tipos de trabalho associados a cada entidade. São indicativas e não correspondem a vagas abertas nem a um ranking por número de trabalhadores.</p>
+<h3>O que os investidores podem considerar comprar</h3>
+<p>Um T1 ou T2 perto da UTAD, do hospital ou de bons transportes pode servir a estudantes, docentes, profissionais de saúde ou casais que trabalham. Um T3 pode ser uma opção para arrendar por quartos se a planta for adequada e as rendas locais sustentarem a análise. Conte com a concorrência das residências estudantis e possíveis períodos sem ocupação no verão.</p>
+<h3>O que ter em conta</h3>
+<p>Vila Real é a cidade mais cara da seleção. Uma boa localização e o conforto no inverno devem justificar a diferença de preço.</p>
+</section>
+<section>
+<h2>4. Guarda</h2>
+<h3>Indústria e logística perto de Espanha</h3>
+<p>A Guarda fica no interior da região Centro, perto de Espanha e da Serra da Estrela.</p>
+<p><b>Compras.</b> Centro comercial La Vie Guarda e supermercado Continente Modelo.<br><b>Transportes.</b> Pode chegar a Lisboa de comboio Intercidades ou autocarro. Há autocarros interurbanos para o Porto. De carro, os principais acessos são a A23 e a A25.<br><b>Clima.</b> A temperatura média é de +4,3 °C em janeiro e de +20,3 °C em julho. A média das máximas diárias em julho é de +26,6 °C (IPMA, 1991–2020).</p>
+<p><b>Ensino:</b> Universidade Politécnica da Guarda, anteriormente Instituto Politécnico da Guarda.<br><b>Saúde:</b> Hospital Sousa Martins, ULS da Guarda.</p>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/guarda-populacao-pt.png" alt="40 687 residentes. Homens 19 440 · mulheres 21 247. 0–14 anos: 4 443 pessoas · 10,9%. 15–64 anos: 25 334 pessoas · 62,3%. 65 ou mais anos: 10 910 pessoas · 26,8%" loading="lazy" decoding="async"><div class="chart-mobile"><div class="totals"><strong>40 687 residentes</strong><span>Homens 19 440 · mulheres 21 247</span></div>
+<div class="agebar" aria-hidden="true"><span class="age0" style="flex:4443"></span><span class="age1" style="flex:25334"></span><span class="age2" style="flex:10910"></span></div>
+<ul class="agelegend"><li><i class="age0"></i> 0–14 anos<strong>4 443 pessoas · 10,9%</strong></li><li><i class="age1"></i> 15–64 anos<strong>25 334 pessoas · 62,3%</strong></li><li><i class="age2"></i> 65 ou mais anos<strong>10 910 pessoas · 26,8%</strong></li></ul></div><figcaption>Guarda: população e indicadores demográficos • Pordata / INE • 2025</figcaption></figure>
+<p>Há 2,32 residentes dos 15 aos 64 anos por cada residente com 65 ou mais anos, face a 2,76 no país. A dependência demográfica dos idosos é superior à nacional e o crescimento populacional em quatro anos foi o mais lento da seleção. Os dados abrangem todo o município.</p>
+<h3>Principais empregadores</h3>
+<div class="scroll">
+<table><tr><th>Principais empregadores</th><th>Setor de atividade</th><th>Áreas de trabalho</th></tr><tr><td>COFICAB</td><td>Fabrico de fios e cabos para automóveis</td><td>Operadores, eletromecânicos, engenheiros de produção, técnicos de qualidade, armazém e logística</td></tr><tr><td>Universidade Politécnica da Guarda</td><td>Ensino e investigação</td><td>Docentes, investigadores, técnicos de laboratório, informática e administração</td></tr><tr><td>Hospital Sousa Martins / ULS</td><td>Saúde</td><td>Pessoal clínico, técnico, de apoio e administrativo</td></tr></table></div>
+<p>As funções da tabela ilustram os tipos de trabalho associados a cada entidade. São indicativas e não correspondem a vagas abertas nem a um ranking por número de trabalhadores.</p>
+<h3>O que os investidores podem considerar comprar</h3>
+<p>Considere um T1 ou T2 com aquecimento eficiente e um trajeto prático para o trabalho ou para as aulas. A COFICAB tem instalações em Vale de Estrela e na PLIE, em Casal de Cinza. Verifique a distância à unidade em causa. Um apartamento mais barato e distante pode ser pouco prático para os trabalhadores.</p>
+<h3>O que ter em conta</h3>
+<p>Verifique as janelas, sinais de humidade, o telhado e os custos de aquecimento. O crescimento populacional foi o mais baixo dos cinco municípios. Confirme a renda com imóveis comparáveis na zona.</p>
+</section>
+<section>
+<h2>3. Bragança</h2>
+<h3>Vida estudantil no nordeste</h3>
+<p>Bragança situa-se no extremo nordeste de Portugal, perto de Espanha.</p>
+<p><b>Compras.</b> Supermercados Continente e Lidl.<br><b>Transportes.</b> Há autocarros interurbanos para o Porto e Lisboa. De carro, pode chegar ao Porto pela A4. A cidade não tem serviço ferroviário de passageiros.<br><b>Clima.</b> A temperatura média é de +4,8 °C em janeiro e de +22,0 °C em julho. A média das máximas diárias em julho é de +29,8 °C (IPMA, 1991–2020).</p>
+<p><b>Ensino:</b> Universidade Politécnica de Bragança, anteriormente Instituto Politécnico de Bragança.<br><b>Saúde:</b> Unidade Hospitalar de Bragança, ULS do Nordeste.</p>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/braganca-populacao-pt.png" alt="38 309 residentes. Homens 18 570 · mulheres 19 739. 0–14 anos: 3 951 pessoas · 10,3%. 15–64 anos: 24 277 pessoas · 63,4%. 65 ou mais anos: 10 081 pessoas · 26,3%" loading="lazy" decoding="async"><div class="chart-mobile"><div class="totals"><strong>38 309 residentes</strong><span>Homens 18 570 · mulheres 19 739</span></div>
+<div class="agebar" aria-hidden="true"><span class="age0" style="flex:3951"></span><span class="age1" style="flex:24277"></span><span class="age2" style="flex:10081"></span></div>
+<ul class="agelegend"><li><i class="age0"></i> 0–14 anos<strong>3 951 pessoas · 10,3%</strong></li><li><i class="age1"></i> 15–64 anos<strong>24 277 pessoas · 63,4%</strong></li><li><i class="age2"></i> 65 ou mais anos<strong>10 081 pessoas · 26,3%</strong></li></ul></div><figcaption>Bragança: população e indicadores demográficos • Pordata / INE • 2025</figcaption></figure>
+<p>Bragança tem o maior rácio de residentes com 65 ou mais anos por criança da seleção. Há 2,41 residentes dos 15 aos 64 anos por cada residente com 65 ou mais anos, acima da Guarda, de Portalegre e de Castelo Branco. Os dados abrangem todo o município.</p>
+<h3>Principais empregadores</h3>
+<div class="scroll">
+<table><tr><th>Principais empregadores</th><th>Setor de atividade</th><th>Áreas de trabalho</th></tr><tr><td>FORVIA / Faurecia</td><td>Fabrico de componentes automóveis</td><td>Operadores, engenheiros de produção, técnicos de qualidade, logística e manutenção</td></tr><tr><td>Universidade Politécnica de Bragança</td><td>Ensino e investigação</td><td>Docentes, investigadores, técnicos de laboratório, de programas internacionais e administrativos</td></tr><tr><td>Unidade Hospitalar de Bragança / ULS</td><td>Saúde</td><td>Profissionais de saúde, pessoal de apoio e administrativo</td></tr></table></div>
+<p>As funções da tabela ilustram os tipos de trabalho associados a cada entidade. São indicativas e não correspondem a vagas abertas nem a um ranking por número de trabalhadores.</p>
+<h3>O que os investidores podem considerar comprar</h3>
+<p>Um T1 ou T2 pode servir a estudantes, docentes e trabalhadores da zona. Um T3 perto do edifício de ensino relevante pode funcionar para arrendamento por quartos. Apartamentos com elevador e acesso fácil a serviços podem interessar a residentes mais velhos que tenham dificuldade em viver longe dos serviços da cidade.</p>
+<h3>O que ter em conta</h3>
+<p>O crescimento populacional foi o mais rápido dos cinco municípios. Um apartamento central e uma casa numa aldeia isolada atraem públicos diferentes, pelo que os prazos de venda podem variar bastante.</p>
+</section>
+<section>
+<h2>2. Portalegre</h2>
+<h3>Uma cidade pequena com serviços de saúde e indústria</h3>
+<p>Portalegre fica no Alto Alentejo, perto de Espanha e da Serra de São Mamede.</p>
+<p><b>Compras.</b> Continente Modelo na Rua do Joinal e Lidl.<br><b>Transportes.</b> Há autocarros interurbanos para Lisboa. Para chegar ao Porto, pode seguir via Lisboa e mudar para um autocarro ou comboio. A estação ferroviária de Portalegre fica fora da cidade.<br><b>Clima.</b> A temperatura média é de +8,7 °C em janeiro e de +24,3 °C em julho. A média das máximas diárias em julho é de +31,2 °C (IPMA, 1991–2020).</p>
+<p><b>Ensino:</b> Universidade Politécnica de Portalegre, anteriormente Instituto Politécnico de Portalegre.<br><b>Saúde:</b> Hospital Doutor José Maria Grande, ULS do Alto Alentejo.</p>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/portalegre-populacao-pt.png" alt="24 025 residentes. Homens 11 713 · mulheres 12 312. 0–14 anos: 2 766 pessoas · 11,5%. 15–64 anos: 14 672 pessoas · 61,1%. 65 ou mais anos: 6 587 pessoas · 27,4%" loading="lazy" decoding="async"><div class="chart-mobile"><div class="totals"><strong>24 025 residentes</strong><span>Homens 11 713 · mulheres 12 312</span></div>
+<div class="agebar" aria-hidden="true"><span class="age0" style="flex:2766"></span><span class="age1" style="flex:14672"></span><span class="age2" style="flex:6587"></span></div>
+<ul class="agelegend"><li><i class="age0"></i> 0–14 anos<strong>2 766 pessoas · 11,5%</strong></li><li><i class="age1"></i> 15–64 anos<strong>14 672 pessoas · 61,1%</strong></li><li><i class="age2"></i> 65 ou mais anos<strong>6 587 pessoas · 27,4%</strong></li></ul></div><figcaption>Portalegre: população e indicadores demográficos • Pordata / INE • 2025</figcaption></figure>
+<p>Há 2,23 residentes dos 15 aos 64 anos por cada residente com 65 ou mais anos. A dependência demográfica dos idosos é claramente superior à do país, onde o rácio é de 2,76. Os dados abrangem todo o município.</p>
+<h3>Principais empregadores</h3>
+<div class="scroll">
+<table><tr><th>Principais empregadores</th><th>Setor de atividade</th><th>Áreas de trabalho</th></tr><tr><td>Hutchinson</td><td>Fabrico industrial de componentes e produtos técnicos</td><td>Operadores, engenheiros de produção e qualidade, técnicos de manutenção, pessoal de armazém e logística</td></tr><tr><td>Universidade Politécnica de Portalegre</td><td>Ensino e investigação</td><td>Docentes, investigadores, técnicos de laboratório e administrativos</td></tr><tr><td>Hospital Doutor José Maria Grande / ULS</td><td>Saúde</td><td>Pessoal clínico, técnico, de apoio e administrativo</td></tr></table></div>
+<p>As funções da tabela ilustram os tipos de trabalho associados a cada entidade. São indicativas e não correspondem a vagas abertas nem a um ranking por número de trabalhadores.</p>
+<h3>O que os investidores podem considerar comprar</h3>
+<p>Considere um apartamento pequeno no centro para trabalhadores locais ou um imóvel perto do hospital ou do edifício de ensino relevante. A instituição também tem instalações em Elvas, por isso confirme onde os estudantes têm aulas. Para arrendar um T2 ou T3 por quartos, avalie a procura e a planta.</p>
+<h3>O que ter em conta</h3>
+<p>É o município mais pequeno da seleção. Casas grandes a precisar de obras dispendiosas podem ter poucos potenciais compradores.</p>
+</section>
+<section>
+<h2>1. Castelo Branco</h2>
+<h3>Habitação acessível e atividade industrial</h3>
+<p>Castelo Branco fica no interior da região Centro, a sul da Guarda.</p>
+<p><b>Compras.</b> Centro comercial Alegro Castelo Branco e hipermercado Auchan.<br><b>Transportes.</b> Pode chegar a Lisboa de autocarro ou de comboio Intercidades pela linha da Beira Baixa. Há autocarros interurbanos para o Porto.<br><b>Clima.</b> A temperatura média é de +8,3 °C em janeiro e de +24,9 °C em julho. A média das máximas diárias em julho é de +32,5 °C (IPMA, 1991–2020).</p>
+<p><b>Ensino:</b> Universidade Politécnica de Castelo Branco, anteriormente Instituto Politécnico de Castelo Branco.<br><b>Saúde:</b> Hospital Amato Lusitano, ULS de Castelo Branco.</p>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/castelo-branco-populacao-pt.png" alt="58 197 residentes. Homens 28 026 · mulheres 30 171. 0–14 anos: 6 807 pessoas · 11,7%. 15–64 anos: 35 292 pessoas · 60,6%. 65 ou mais anos: 16 098 pessoas · 27,7%" loading="lazy" decoding="async"><div class="chart-mobile"><div class="totals"><strong>58 197 residentes</strong><span>Homens 28 026 · mulheres 30 171</span></div>
+<div class="agebar" aria-hidden="true"><span class="age0" style="flex:6807"></span><span class="age1" style="flex:35292"></span><span class="age2" style="flex:16098"></span></div>
+<ul class="agelegend"><li><i class="age0"></i> 0–14 anos<strong>6 807 pessoas · 11,7%</strong></li><li><i class="age1"></i> 15–64 anos<strong>35 292 pessoas · 60,6%</strong></li><li><i class="age2"></i> 65 ou mais anos<strong>16 098 pessoas · 27,7%</strong></li></ul></div><figcaption>Castelo Branco: população e indicadores demográficos • Pordata / INE • 2025</figcaption></figure>
+<p>Há 2,19 residentes dos 15 aos 64 anos por cada residente com 65 ou mais anos. É o rácio mais baixo dos cinco, embora a população do município tenha crescido 7,5% em quatro anos. Os dados abrangem todo o município.</p>
+<h3>Principais empregadores</h3>
+<div class="scroll">
+<table><tr><th>Principais empregadores</th><th>Setor de atividade</th><th>Áreas de trabalho</th></tr><tr><td>Schreiber Foods</td><td>Indústria alimentar e produtos lácteos</td><td>Operadores, técnicos de segurança alimentar e qualidade, manutenção de equipamentos e logística</td></tr><tr><td>Versigent Manufacturing Portugal, antiga fábrica da Aptiv</td><td>Sistemas de cablagem para automóveis</td><td>Operadores, engenheiros de produção, técnicos de qualidade, manutenção e logística</td></tr><tr><td>Universidade Politécnica de Castelo Branco</td><td>Ensino e investigação</td><td>Docentes, investigadores, técnicos de laboratório e administrativos</td></tr><tr><td>Hospital Amato Lusitano / ULS</td><td>Saúde</td><td>Pessoal clínico, de apoio e administrativo</td></tr></table></div>
+<p>As funções da tabela ilustram os tipos de trabalho associados a cada entidade. São indicativas e não correspondem a vagas abertas nem a um ranking por número de trabalhadores.</p>
+<p>Em 10 de novembro de 2026, o município informou que a Versigent empregava cerca de 1 000 pessoas e que tinha sido aprovado o arrendamento de um espaço para a expansão prevista. O anúncio diz respeito aos planos da empresa e não permite antecipar a evolução dos preços dos apartamentos.</p>
+<h3>O que os investidores podem considerar comprar</h3>
+<p>Considere um T2 funcional para um casal que trabalha ou uma família, ou um T1/T2 perto do hospital e dos edifícios de ensino. Um apartamento com acabamentos antigos e uma estrutura em bom estado pode ser adequado para uma renovação moderada e arrendamento de longa duração. Ajuste o orçamento das obras às rendas locais.</p>
+<h3>O que ter em conta</h3>
+<p>A preços de compra baixos correspondem rendimentos locais historicamente mais baixos. Evite basear as contas numa única fábrica ou esperar que uma renovação dispendiosa se pague através de uma renda mais elevada.</p>
+</section>
+<h2>Quanto se ganha, em média, nestas cidades?</h2>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/salarios-pt.png" alt="Vila Real: 1 308,6 €. Guarda: 1 330,6 €. Bragança: 1 236,4 €. Portalegre: 1 262,3 €. Castelo Branco: 1 199,5 €. Portugal: 1 460,8 €. Lisboa: 1 985,6 €. Porto: 1 761,4 €" loading="lazy" decoding="async"><div class="chart-mobile"><div class="plot">
+<div class="chart-row"><span>Vila Real</span>
+<div class="track"><i style="--width:62.31428571428571%"></i></div><strong>1 308,6 €</strong></div>
+<div class="chart-row"><span>Guarda</span>
+<div class="track"><i style="--width:63.36190476190475%"></i></div><strong>1 330,6 €</strong></div>
+<div class="chart-row"><span>Bragança</span>
+<div class="track"><i style="--width:58.87619047619048%"></i></div><strong>1 236,4 €</strong></div>
+<div class="chart-row"><span>Portalegre</span>
+<div class="track"><i style="--width:60.109523809523814%"></i></div><strong>1 262,3 €</strong></div>
+<div class="chart-row"><span>Castelo Branco</span>
+<div class="track"><i style="--width:57.11904761904761%"></i></div><strong>1 199,5 €</strong></div>
+<div class="chart-row national"><span>Portugal</span>
+<div class="track"><i style="--width:69.56190476190476%"></i></div><strong>1 460,8 €</strong></div>
+<div class="chart-row"><span>Lisboa</span>
+<div class="track"><i style="--width:94.55238095238094%"></i></div><strong>1 985,6 €</strong></div>
+<div class="chart-row"><span>Porto</span>
+<div class="track"><i style="--width:83.87619047619049%"></i></div><strong>1 761,4 €</strong></div></div></div><figcaption>Ganho médio mensal bruto dos trabalhadores por conta de outrem · 2023 · Pordata</figcaption></figure>
+<p>Nos cinco municípios, o ganho médio mensal bruto situava-se entre cerca de 1 200 € e 1 331 €. Se vai mudar-se para trabalhar na zona, compare a proposta de trabalho com a renda, o aquecimento e os transportes. Se mantiver o rendimento do trabalho remoto, o menor custo da habitação pode ser uma vantagem. Para quem investe, os ganhos locais ajudam a estimar o orçamento dos possíveis arrendatários.</p>
+<h2>Rendas na habitação nova e usada</h2>
+<p>Nos novos contratos de 2025, a renda mediana nos cinco municípios variava entre 4,37 €/m² e 5,83 €/m², face a 14,13 €/m² no Porto e 16,88 €/m² em Lisboa. Para um apartamento de 60 m², são cerca de 262 € a 350 € por mês, face a 848 € e 1 013 €, respetivamente.</p>
+<figure class="chart">
+<div class="scroll">
+<table><thead><tr><th scope="col">Município</th><th scope="col">Renda, 2025</th><th scope="col">60 m², 2025</th><th scope="col">Renda de 60 m² / ganho, 2023</th></tr></thead><tbody><tr><td>Vila Real</td><td>5,83 €/m²</td><td>350 €</td><td>23%</td></tr><tr><td>Guarda</td><td>5,11 €/m²</td><td>307 €</td><td>19%</td></tr><tr><td>Bragança</td><td>4,63 €/m²</td><td>278 €</td><td>18%</td></tr><tr><td>Portalegre</td><td>4,37 €/m²</td><td>262 €</td><td>17%</td></tr><tr><td>Castelo Branco</td><td>5,17 €/m²</td><td>310 €</td><td>22%</td></tr><tr><td>Lisboa</td><td>16,88 €/m²</td><td>1 013 €</td><td>46%</td></tr><tr><td>Porto</td><td>14,13 €/m²</td><td>848 €</td><td>42%</td></tr></tbody></table></div><figcaption>Mediana dos novos contratos de arrendamento · INE. A última coluna compara a renda de 60 m² com o ganho médio mensal bruto do mesmo ano, 2023.</figcaption></figure>
+<p>Em 2023, a renda estimada de 60 m² representava cerca de 17–23% de um ganho médio bruto nestes cinco municípios, 42% no Porto e 46% em Lisboa. Para o seu orçamento, compare os anúncios atuais com o rendimento líquido. As rendas anunciadas podem superar a mediana dos contratos assinados.</p>
+<p>Os dados do INE agregam os tipos de habitação, pelo que não permitem comparar medianas de renda para imóveis novos e usados nestas cinco cidades. Para avaliar a diferença, compare apartamentos com a mesma área e tipologia na mesma zona, tendo em conta o aquecimento, o estacionamento e o estado do edifício.</p>
+<figure class="chart">
+<h3>Preços de compra para comparação</h3>
+<div class="scroll">
+<table><thead><tr><th scope="col">Município</th><th scope="col">Habitação usada</th><th scope="col">Habitação nova</th><th scope="col">Diferença</th></tr></thead><tbody><tr><td>Vila Real</td><td>1 149 €/m²</td><td>1 595 €/m²</td><td>+39%</td></tr><tr><td>Guarda</td><td>777 €/m²</td><td>1 122 €/m²</td><td>+44%</td></tr><tr><td>Bragança</td><td>820 €/m²</td><td>1 166 €/m²</td><td>+42%</td></tr><tr><td>Portalegre</td><td>773 €/m²</td><td>—</td><td>—</td></tr><tr><td>Castelo Branco</td><td>686 €/m²</td><td>1 321 €/m²</td><td>+93%</td></tr></tbody></table></div><figcaption>Preços medianos das vendas concluídas · 2024 · Pordata / INE</figcaption></figure>
+<p>Nos municípios com ambas as medianas disponíveis, as casas novas foram vendidas por valores 39–93% superiores aos das casas usadas em 2024.</p>
+<h2>Os preços também sobem nas cidades mais acessíveis</h2>
+<figure class="chart">
+<img class="chart-image" src="/articles/CidadesAcessiveisPortugal/images/evolucao-precos-pt.png" alt="Vila Real: 20,3%. Guarda: 18,4%. Bragança: 13,3%. Portalegre: 6,4%. Castelo Branco: 10,5%" loading="lazy" decoding="async"><div class="chart-mobile"><div class="plot">
+<div class="chart-row"><span>Vila Real</span>
+<div class="track"><i style="--width:92.27272727272727%"></i></div><strong>20,3%</strong></div>
+<div class="chart-row"><span>Guarda</span>
+<div class="track"><i style="--width:83.63636363636363%"></i></div><strong>18,4%</strong></div>
+<div class="chart-row"><span>Bragança</span>
+<div class="track"><i style="--width:60.45454545454546%"></i></div><strong>13,3%</strong></div>
+<div class="chart-row"><span>Portalegre</span>
+<div class="track"><i style="--width:29.090909090909093%"></i></div><strong>6,4%</strong></div>
+<div class="chart-row"><span>Castelo Branco</span>
+<div class="track"><i style="--width:47.72727272727273%"></i></div><strong>10,5%</strong></div></div></div><figcaption>Variação homóloga dos preços anunciados · outubro de 2026 · Idealista</figcaption></figure>
+<p>Segundo o Idealista, os preços medianos anunciados aumentaram entre 6,4% e 20,3% em termos homólogos. Os preços finais de venda podem diferir dos valores pedidos nos anúncios.</p>
+<h2>Conclusões para investidores e para quem pensa mudar-se</h2>
+<p><b>Para investidores.</b> Comece por identificar quem poderá arrendar o imóvel e onde lhe será mais prático viver. Para estudantes, verifique o edifício de ensino, a concorrência das residências e a desocupação no verão. Para trabalhadores, confirme o trajeto real, o estacionamento e os transportes. Para famílias, considere as escolas, a planta e os custos de manutenção.</p>
+<p>Exemplo ilustrativo: 110 000 € pela compra, 25 000 € pelas obras e 10 000 € por custos de aquisição, mobiliário e outras despesas iniciais. Investimento total: 145 000 €. Com uma renda de 750 € e um mês sem ocupação, a receita anual seria de 8 250 €. Deduzindo 2 250 € em despesas correntes e reservas, sobrariam 6 000 €, cerca de 4,1% antes de impostos sobre o rendimento e de custos de financiamento. Confirme cada valor para o imóvel em análise.</p>
+<p><b>Para quem pensa mudar-se.</b> Comece por Vila Real se valoriza um ambiente universitário e as deslocações ao Porto. Veja Castelo Branco e a Guarda se precisar de comboio para Lisboa. Considere Bragança se o trabalho ou os estudos o ligam ao nordeste. Em Portalegre, verifique se é prático viver na morada escolhida sem carro. Antes de comprar, compare o orçamento depois da habitação e dos transportes e experimente os trajetos do dia a dia.</p>
+<p><b>Em que cidade consideraria viver ou comprar casa? Diga-me o que mais valoriza: trabalho, clima, serviços ou rendimento de arrendamento.</b></p>
+<h2>Fontes e períodos de referência</h2>
+<ul><li><a href="https://retratos.pordata.pt/populacao/vila-real">Vila Real — População, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/emprego-e-empresas/vila-real">Vila Real — Ganhos, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/habitacao/vila-real">Vila Real — Vendas, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/populacao/guarda">Guarda — População, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/emprego-e-empresas/guarda">Guarda — Ganhos, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/habitacao/guarda">Guarda — Vendas, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/populacao/braganca">Bragança — População, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/emprego-e-empresas/braganca">Bragança — Ganhos, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/habitacao/braganca">Bragança — Vendas, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/populacao/portalegre">Portalegre — População, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/emprego-e-empresas/portalegre">Portalegre — Ganhos, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/habitacao/portalegre">Portalegre — Vendas, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/populacao/castelo-branco">Castelo Branco — População, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/emprego-e-empresas/castelo-branco">Castelo Branco — Ganhos, Pordata / INE</a></li><li><a href="https://retratos.pordata.pt/habitacao/castelo-branco">Castelo Branco — Vendas, Pordata / INE</a></li></ul>
+<p>Novos contratos de arrendamento: 2023 e 2025. Demografia: 2025. Variação da população: 2021–2025. Ganhos: 2023. Vendas: 2024. Anúncios: outubro de 2026. Os dados municipais abrangem todo o concelho, incluindo as zonas fora da cidade. As opções de compra são cenários a avaliar para cada imóvel.</p>
+<p><a href="https://www.idealista.pt/news/imobiliario/habitacao/2026/11/02/78555-casas-a-venda-ficam-7-5-mais-caras-em-outubro-e-renovam-recorde">Idealista: preços e evolução em outubro de 2026</a></p>
+<ul><li><a href="https://www.ine.pt/xurl/indx/0012917">INE · população por grupo etário</a></li><li><a href="https://www.ine.pt/xurl/indx/0014711">INE · rendas medianas nos novos contratos</a></li><li><a href="https://www.idealista.pt/media/relatorios-preco-habitacao/">Idealista · preços medianos anunciados em Portugal</a></li><li><a href="https://retratos.pordata.pt/emprego-e-empresas/lisboa">Pordata · ganhos em Lisboa</a></li><li><a href="https://retratos.pordata.pt/emprego-e-empresas/porto">Pordata · ganhos no Porto</a></li><li><a href="https://www.ipma.pt/pt/oclima/normais.clima/1991-2020/normalclimate9120.jsp">IPMA · normais climatológicas 1991–2020</a></li><li><a href="https://rede-expressos.pt/">Rede Expressos · autocarros interurbanos</a></li><li><a href="https://www.cp.pt/">Comboios de Portugal · horários dos comboios</a></li></ul>
+<p><a href="/articles/">← Todos os artigos</a></p>
+</article></main>
+<footer>© 2026 Irina Abasheva</footer>
+</body>
+</html>
